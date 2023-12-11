@@ -246,66 +246,66 @@ const Members = () => {
 
   // Filter event cards based on the search term
   const filteredMembers = member.filter((m) =>
-  m.name.toLowerCase().includes(searchTerm.toLowerCase())
-);
+    m.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
 
   const filteredAlumni = alumni.filter((a) =>
-  a.name.toLowerCase().includes(searchTerm.toLowerCase())
-);
+    a.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
-const filteredPeople = members ? filteredMembers : filteredAlumni;
+  const filteredPeople = members ? filteredMembers : filteredAlumni;
 
-return (
-  <>
-   <input
+  return (
+    <>
+      <input
         type="text"
         placeholder="Search..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="search-box"
       />
-    <div className="people-container">
-      <div className="people-list">
-        {filteredPeople.length > 0 ? (
-          filteredPeople.map((person) => (
-            <div key={person.id} className="member-card">
-              <div className="image-wrapper-members">
-                <img
-                  className="avatar"
-                  src={person.image}
-                  alt="profile"
-                  width={150}
-                  height={150}
-                />
+      <div className="people-container">
+        <div className="people-list">
+          {filteredPeople.length > 0 ? (
+            filteredPeople.map((person) => (
+              <div key={person.id} className="member-card">
+                <div className="image-wrapper-members">
+                  <img
+                    className="avatar"
+                    src={person.image}
+                    alt="profile"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <h2 className="member-name">{person.name}</h2>
+                <p className="member-position">{person.position}</p>
               </div>
-              <h2 className="member-name">{person.name}</h2>
-              <p className="member-position">{person.position}</p>
-            </div>
-          ))
-        ) : (
-          <p className="no-members-message">
-            Zzz... No members found. Check back later or try a different search.
-          </p>
-        )}
+            ))
+          ) : (
+            <p className="no-members-message">
+              Zzz... No members found. Check back later or try a different search.
+            </p>
+          )}
+        </div>
+        <div className="people-nav">
+          <button
+            className={`nav-button ${members ? 'nav-active' : ''}`}
+            onClick={toggleMembers}
+          >
+            Members
+          </button>
+          <button
+            className={`nav-button ${!members ? 'nav-active' : ''}`}
+            onClick={toggleAlumni}
+          >
+            Alumni
+          </button>
+        </div>
       </div>
-      <div className="people-nav">
-        <button
-          className={`nav-button ${members ? 'nav-active' : ''}`}
-          onClick={toggleMembers}
-        >
-          Members
-        </button>
-        <button
-          className={`nav-button ${!members ? 'nav-active' : ''}`}
-          onClick={toggleAlumni}
-        >
-          Alumni
-        </button>
-      </div>
-    </div>
-  </>
-);
+    </>
+  );
 };
 
 export default Members;

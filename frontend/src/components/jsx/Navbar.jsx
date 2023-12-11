@@ -5,6 +5,23 @@ import EnquireLogo from '../../assets/EnquireLogo.jpeg';
 
 const Navbar = () => {
     const [isExpanded, setIsExpanded] = useState(false);
+    const [scrolling, setScrolling] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolling(true);
+            } else {
+                setScrolling(false);
+            }
+        };
+
+        document.addEventListener('scroll', handleScroll);
+
+        return () => {
+            document.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         const handleClickOutside = (e) => {
@@ -29,7 +46,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='container'>
+            <div className={`container-navbar ${scrolling ? 'translucent' : ''}`}>
                 <header className="site-header">
                     <div className="header__content--flow">
                         <section className="header-content--left">
@@ -37,7 +54,7 @@ const Navbar = () => {
                                 <img
                                     src={EnquireLogo}
                                     alt="logo"
-                                    style={{ width: '50px', height: '50px', borderRadius: '50%' }}
+                                    style={{ width: '40px', height: '40px', borderRadius: '50%' }}
                                 />
                                 <span className="logo-text">Enquire Quiz Club</span>
                             </NavLink>
@@ -47,7 +64,7 @@ const Navbar = () => {
                         </section>
                         <section className="header-content--right">
                             <nav className="header-nav" role="navigation">
-                                <ul className={`nav__list ${isExpanded ? 'expanded' : ''}`} aria-expanded={isExpanded}>
+                                <div className={`nav__list ${isExpanded ? 'expanded' : ''}`} aria-expanded={isExpanded}>
                                     <li className="list-item">
                                         <NavLink to="/" className="nav__link">Home</NavLink>
                                     </li>
@@ -63,7 +80,7 @@ const Navbar = () => {
                                     <li className="list-item">
                                         <NavLink to="/archives" className="nav__link">Archives</NavLink>
                                     </li>
-                                </ul>
+                                </div>
                             </nav>
                         </section>
                     </div>

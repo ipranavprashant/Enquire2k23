@@ -46,11 +46,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
   .form-box {
     margin-right: 8rem;
+    margin-left: 8rem;
+    width: 75%;
   }
 }

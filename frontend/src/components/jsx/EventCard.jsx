@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/EventCard.css';
+import { NavLink } from 'react-router-dom';
 
 const EventCard = (props) => {
     const {
@@ -46,9 +47,9 @@ const EventCard = (props) => {
                 </a>
             </div>
             <div className="event-tickets">
-                <a className="link" href={registerLink}>
+                <NavLink className="link" to={registerLink}>
                     REGISTER
-                </a>
+                </NavLink>
             </div>
         </section>
     );

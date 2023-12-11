@@ -22,10 +22,10 @@ const Footer = () => {
                         <div className="footer-col">
                             <h4>get help</h4>
                             <ul>
-                                <li><NavLink to="/aboutus" className="nav__link">FAQ</NavLink></li>
-                                <li><NavLink to="/aboutus" className="nav__link">Contact Us</NavLink></li>
-                                <li><NavLink to="/aboutus" className="nav__link">Raise a Dispute</NavLink></li>
-                                <li><NavLink to="/aboutus" className="nav__link">Sponsorship</NavLink></li>
+                                <li><NavLink to="/contactus" className="nav__link">FAQ</NavLink></li>
+                                <li><NavLink to="/contactus" className="nav__link">Contact Us</NavLink></li>
+                                <li><NavLink to="/contactus" className="nav__link">Raise a Dispute</NavLink></li>
+                                <li><NavLink to="/contactus" className="nav__link">Sponsorship</NavLink></li>
                             </ul>
                         </div>
                         <div className="footer-col">
