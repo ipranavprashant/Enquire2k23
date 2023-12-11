@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Contact.css'
+import '../styles/Heading.css'
 
 const ContactUs = () => {
     return (
@@ -7,8 +8,9 @@ const ContactUs = () => {
             <div class="innerwrap">
 
                 <section class="section1 clearfix">
-                    <div class="textcenter">
-                        <h1>Want to get in touch? <br />Drop Us a Mail</h1>
+                <div className='beautify-heading'>
+                        <h1>Contact Us</h1>
+                        {/* <p className='beautify-heading'>Drop us a mail at <a href="mailto:enquire@nitc.ac.in">enquire@nitc.ac.in</a> or...</p> */}
                     </div>
                 </section>
 

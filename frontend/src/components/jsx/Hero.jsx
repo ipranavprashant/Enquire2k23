@@ -3,7 +3,9 @@ import '../styles/Hero.css'
 
 const Hero = () => {
   return (
-    <>Hero Section</>
+    <>
+        Hero Section [Upcoming]
+    </>
   )
 }
 

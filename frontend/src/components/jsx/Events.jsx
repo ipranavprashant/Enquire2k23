@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import '../styles/Events.css';
+import '../styles/Heading.css'
 import EventCard from './EventCard';
+import EventDetailsModal from './EventDetailsModal';
 
 const Events = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const [selectedEvent, setSelectedEvent] = useState(null);
 
-    // Sample data for event cards
+    const handleEventCardClick = (event) => {
+        setSelectedEvent(event);
+    };
+
+    const handleCloseModal = () => {
+        setSelectedEvent(null);
+    };
+
     const eventCards = [
         {
             id: 1,
@@ -15,8 +25,8 @@ const Events = () => {
             streetAddress: '123 Main St',
             locality: 'City A, State A',
             imageUrl: 'https://source.unsplash.com/random',
-            date: '2023-01-01',
-            time: '18:00',
+            date: 'dd-mm-yyyy',
+            time: 'hh:mm',
             detailsLink: 'https://example.com/details1',
             registerLink: '/registration-panel',
         },
@@ -28,8 +38,8 @@ const Events = () => {
             streetAddress: '456 Oak St',
             locality: 'City B, State B',
             imageUrl: 'https://source.unsplash.com/random',
-            date: '2023-02-01',
-            time: '19:30',
+            date: 'dd-mm-yyyy',
+            time: 'hh:mm',
             detailsLink: 'https://example.com/details2',
             registerLink: '/registration-panel',
         },
@@ -41,8 +51,8 @@ const Events = () => {
             streetAddress: '456 Oak St',
             locality: 'City B, State B',
             imageUrl: 'https://source.unsplash.com/random',
-            date: '2023-02-01',
-            time: '19:30',
+            date: 'dd-mm-yyyy',
+            time: 'hh:mm',
             detailsLink: 'https://example.com/details2',
             registerLink: '/registration-panel',
         },
@@ -54,20 +64,22 @@ const Events = () => {
             streetAddress: '456 Oak St',
             locality: 'City B, State B',
             imageUrl: 'https://source.unsplash.com/random',
-            date: '2023-02-01',
-            time: '19:30',
+            date: 'dd-mm-yyyy',
+            time: 'hh:mm',
             detailsLink: 'https://example.com/details2',
             registerLink: '/registration-panel',
         },
     ];
 
-    // Filter event cards based on the search term
     const filteredEventCards = eventCards.filter((card) =>
         card.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
     return (
         <div className="your-component-container">
+            <div className='beautify-heading'>
+                <h1>Events</h1>
+            </div>
             <input
                 type="text"
                 placeholder="Search..."
@@ -91,12 +103,19 @@ const Events = () => {
                             time={card.time}
                             detailsLink={card.detailsLink}
                             registerLink={card.registerLink}
+                            onClick={() => handleEventCardClick(card)}
                         />
                     ))
                 ) : (
-                    <p className="no-events-message">Zzz... No events found. Check back later or try a different search.</p>
+                    <p className="no-events-message">
+                        Zzz... No events found. Check back later or try a different search.
+                    </p>
                 )}
             </div>
+
+            {selectedEvent && (
+                <EventDetailsModal event={selectedEvent} onClose={handleCloseModal} />
+            )}
         </div>
     );
 };

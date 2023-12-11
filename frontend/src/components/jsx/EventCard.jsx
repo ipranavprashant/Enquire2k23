@@ -15,10 +15,16 @@ const EventCard = (props) => {
         time,
         detailsLink,
         registerLink,
+        onClick,
     } = props;
 
+    const handleDetailsLinkClick = (e) => {
+        e.preventDefault();
+        onClick(); // Trigger the click handler to open the modal
+    };
+
     return (
-        <section className="event card">
+        <section className="event card" onClick={onClick}>
             <div className="event-title title-block">
                 <h2 className="title">{title}</h2>
                 <p className="venue">
@@ -42,7 +48,11 @@ const EventCard = (props) => {
                 <time dateTime={time}>{time}</time>
             </div>
             <div className="event-details">
-                <a className="link details" href={detailsLink}>
+                <a
+                    className="link details"
+                    href={detailsLink}
+                    onClick={handleDetailsLinkClick}
+                >
                     DETAILS
                 </a>
             </div>

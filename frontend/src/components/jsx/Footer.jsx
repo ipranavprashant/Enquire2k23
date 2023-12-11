@@ -14,7 +14,7 @@ const Footer = () => {
                             <h4>Club</h4>
                             <ul>
                                 <li><NavLink to="/about" className="nav__link">about us</NavLink></li>
-                                <li><NavLink to="/events" className="nav__link">events</NavLink></li>
+                                <li><NavLink to="/gallery" className="nav__link">Gallery</NavLink></li>
                                 <li><NavLink to="/about" className="nav__link">privacy policy</NavLink></li>
                                 <li><NavLink to="/members" className="nav__link">alumni</NavLink></li>
                             </ul>
@@ -22,8 +22,8 @@ const Footer = () => {
                         <div className="footer-col">
                             <h4>get help</h4>
                             <ul>
-                                <li><NavLink to="/contactus" className="nav__link">FAQ</NavLink></li>
-                                <li><NavLink to="/contactus" className="nav__link">Contact Us</NavLink></li>
+                                <li><NavLink to="/faq" className="nav__link">FAQ</NavLink></li>
+                                <li><NavLink to="/archives" className="nav__link">Archives</NavLink></li>
                                 <li><NavLink to="/contactus" className="nav__link">Raise a Dispute</NavLink></li>
                                 <li><NavLink to="/contactus" className="nav__link">Sponsorship</NavLink></li>
                             </ul>

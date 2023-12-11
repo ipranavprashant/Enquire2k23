@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import Image from 'next/image';
-import '../styles/Members.css'; // Make sure to provide the correct path
+import '../styles/Members.css';
+import '../styles/Heading.css'
 // import Aabid from "@/public/images/Team/Aabid Mohamed.jpg"
 
 import Abin from "../../assets/members/EnquireLogo.jpeg";
@@ -255,9 +256,13 @@ const Members = () => {
   );
 
   const filteredPeople = members ? filteredMembers : filteredAlumni;
+  const headingText = members ? 'Members' : 'Alumni';
 
   return (
     <>
+      <div className='beautify-heading'>
+        <h1>{headingText}</h1>
+      </div>
       <input
         type="text"
         placeholder="Search..."
