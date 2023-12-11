@@ -245,61 +245,67 @@ const Members = () => {
   ]
 
   // Filter event cards based on the search term
-  const filteredMemberCards = member.filter((member) =>
-    member.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredMembers = member.filter((m) =>
+  m.name.toLowerCase().includes(searchTerm.toLowerCase())
+);
 
 
-  return (
-    <>
-      <input
+  const filteredAlumni = alumni.filter((a) =>
+  a.name.toLowerCase().includes(searchTerm.toLowerCase())
+);
+
+const filteredPeople = members ? filteredMembers : filteredAlumni;
+
+return (
+  <>
+   <input
         type="text"
         placeholder="Search..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="search-box"
       />
-      <div className="people-container">
-        <div className="people-list">
-          {filteredMemberCards.length > 0 ? (
-            filteredMemberCards.map((member) => (
-              <div key={member.id} className="member-card">
-                <div className="image-wrapper-members">
-                  <img
-                    className="avatar"
-                    src={member.image}
-                    alt="profile"
-                    width={150}
-                    height={150}
-                  />
-                </div>
-                <h2 className="member-name">{member.name}</h2>
-                <p className="member-position">{member.position}</p>
+    <div className="people-container">
+      <div className="people-list">
+        {filteredPeople.length > 0 ? (
+          filteredPeople.map((person) => (
+            <div key={person.id} className="member-card">
+              <div className="image-wrapper-members">
+                <img
+                  className="avatar"
+                  src={person.image}
+                  alt="profile"
+                  width={150}
+                  height={150}
+                />
               </div>
-            ))
-          ) : (
-            <p className="no-members-message">
-              Zzz... No members found. Check back later or try a different search.
-            </p>
-          )}
-        </div>
-        <div className="people-nav">
-          <button
-            className={`nav-button ${members ? 'nav-active' : ''}`}
-            onClick={toggleMembers}
-          >
-            Members
-          </button>
-          <button
-            className={`nav-button ${!members ? 'nav-active' : ''}`}
-            onClick={toggleAlumni}
-          >
-            Alumni
-          </button>
-        </div>
+              <h2 className="member-name">{person.name}</h2>
+              <p className="member-position">{person.position}</p>
+            </div>
+          ))
+        ) : (
+          <p className="no-members-message">
+            Zzz... No members found. Check back later or try a different search.
+          </p>
+        )}
       </div>
-    </>
-  );
+      <div className="people-nav">
+        <button
+          className={`nav-button ${members ? 'nav-active' : ''}`}
+          onClick={toggleMembers}
+        >
+          Members
+        </button>
+        <button
+          className={`nav-button ${!members ? 'nav-active' : ''}`}
+          onClick={toggleAlumni}
+        >
+          Alumni
+        </button>
+      </div>
+    </div>
+  </>
+);
 };
 
 export default Members;

@@ -21,7 +21,7 @@ const EventCard = (props) => {
             <div className="event-title title-block">
                 <h2 className="title">{title}</h2>
                 <p className="venue">
-                    <a className="link" href={venueLink} target="_blank" aria-label="Visit venue website">
+                    <a className="link" href={venueLink} target="_blank" rel="noopener noreferrer" aria-label="Visit venue website">
                         {venueName}
                     </a>
                 </p>

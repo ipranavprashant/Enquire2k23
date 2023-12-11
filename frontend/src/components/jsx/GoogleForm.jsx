@@ -5,7 +5,8 @@ const GoogleForm = () => {
     return (
         <>
             <div className='container-googleform'>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScEk7Q8__umCT6VKOPGH5wjb20KR4FUHzGEwg12v2raRftMCg/viewform?embedded=true" 
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScEk7Q8__umCT6VKOPGH5wjb20KR4FUHzGEwg12v2raRftMCg/viewform?embedded=true"
+                title="event registration form"
                 width="640" 
                 height="581" 
                 frameborder="0"
