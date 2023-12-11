@@ -1,0 +1,12 @@
+.container-googleform {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+}
+
+@media(max-width: 1000px) {
+    .container-googleform {
+        margin: 0rem;
+    }
+}
