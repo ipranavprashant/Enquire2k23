@@ -11,6 +11,7 @@ import Contact from './components/jsx/Contact';
 import GoogleForm from './components/jsx/GoogleForm';
 import FAQ from './components/jsx/FAQ';
 import Home from './components/jsx/Home';
+import Gallery from './components/jsx/Gallery';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/contactus" element={<Contact />} />
         <Route path="/registration-panel" element={<GoogleForm />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
