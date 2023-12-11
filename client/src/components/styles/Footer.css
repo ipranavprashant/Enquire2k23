@@ -81,7 +81,7 @@ ul {
 }
 
 .footer-col .social-links a:hover {
-    color: #24262b;
+    color: #e91e63;
     background-color: #ffffff;
 }
 
@@ -97,6 +97,7 @@ ul {
     color: #f3f3f3;
 }
 
+
 .footer-heart{text-align:center;font-family: open sans, sans-serif;}
 
 .footer-heart a{border-bottom: 1px solid #453886;color: #453886;padding-bottom: .25em; text-decoration: none;}
@@ -111,6 +112,10 @@ ul {
 
 .emoji{vertical-align: middle;}
 
+.footer-col ul li a.active {
+    color: #e91e63;
+    /* padding-left: 8px; */
+}
 /*responsive*/
 @media(max-width: 767px) {
     .footer-col {

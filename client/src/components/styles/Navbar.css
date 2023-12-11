@@ -1,11 +1,19 @@
 :root {
-    --brand-clr: hsl(185, 85%, 40%);
+    --brand-clr: #e91e63;
     --text-primary: hsl(180, 6%, 38%);
     /* --header: 3.5rem; */
     --full-width: 100%;
     --bd-radius: 0.5em;
     --space-05: 0.5rem;
 }
+
+.header-nav .nav__link.active,
+.header-nav .nav__link:focus,
+.header-nav .nav__link:hover {
+    color: var(--brand-clr);
+    border-bottom: 2px solid var(--brand-clr);
+}
+
 
 
 .site-header {
@@ -156,6 +164,7 @@
 }
 
 @media (max-width: 575px) {
+
     .header-content--left {
         justify-content: space-between;
     }

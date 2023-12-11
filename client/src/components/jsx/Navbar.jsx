@@ -44,49 +44,58 @@ const Navbar = () => {
         setIsExpanded((prev) => !prev);
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
+    const closeNav = () => {
+        setIsExpanded(false);
+    };
+
     return (
-        <>
-            <div className={`container-navbar ${scrolling ? 'translucent' : ''}`}>
-                <header className="site-header">
-                    <div className="header__content--flow">
-                        <section className="header-content--left">
-                            <NavLink to="/" className="brand-logo">
-                                <img
-                                    src={EnquireLogo}
-                                    alt="logo"
-                                    style={{ width: '40px', height: '40px', borderRadius: '50%' }}
-                                />
-                                <span className="logo-text">Enquire Quiz Club</span>
-                            </NavLink>
-                            <button className="nav-toggle" onClick={handleToggle}>
-                                <span className="toggle--icon"></span>
-                            </button>
-                        </section>
-                        <section className="header-content--right">
-                            <nav className="header-nav" role="navigation">
-                                <div className={`nav__list ${isExpanded ? 'expanded' : ''}`} aria-expanded={isExpanded}>
-                                    <li className="list-item">
-                                        <NavLink to="/" className="nav__link">Home</NavLink>
-                                    </li>
-                                    <li className="list-item">
-                                        <NavLink to="/about" className="nav__link">About</NavLink>
-                                    </li>
-                                    <li className="list-item">
-                                        <NavLink to="/events" className="nav__link">Events</NavLink>
-                                    </li>
-                                    <li className="list-item">
-                                        <NavLink to="/members" className="nav__link">Members</NavLink>
-                                    </li>
-                                    <li className="list-item">
-                                        <NavLink to="/contactus" className="nav__link">Contact Us</NavLink>
-                                    </li>
-                                </div>
-                            </nav>
-                        </section>
-                    </div>
-                </header>
-            </div>
-        </>
+        <div className={`container-navbar ${scrolling ? 'translucent' : ''}`}>
+            <header className="site-header">
+                <div className="header__content--flow">
+                    <section className="header-content--left">
+                        <NavLink to="/" className="brand-logo" onClick={scrollToTop}>
+                            <img
+                                src={EnquireLogo}
+                                alt="logo"
+                                style={{ width: '40px', height: '40px', borderRadius: '50%' }}
+                            />
+                            <span className="logo-text">Enquire Quiz Club</span>
+                        </NavLink>
+                        <button className="nav-toggle" onClick={handleToggle}>
+                            <span className="toggle--icon"></span>
+                        </button>
+                    </section>
+                    <section className="header-content--right">
+                        <nav className="header-nav" role="navigation">
+                            <div className={`nav__list ${isExpanded ? 'expanded' : ''}`} aria-expanded={isExpanded}>
+                                <li className="list-item">
+                                    <NavLink to="/" className="nav__link" activeClassName="active" onClick={() => { scrollToTop(); closeNav(); }}>Home</NavLink>
+                                </li>
+                                <li className="list-item">
+                                    <NavLink to="/about" className="nav__link" activeClassName="active" onClick={() => { scrollToTop(); closeNav(); }}>About</NavLink>
+                                </li>
+                                <li className="list-item">
+                                    <NavLink to="/events" className="nav__link" activeClassName="active" onClick={() => { scrollToTop(); closeNav(); }}>Events</NavLink>
+                                </li>
+                                <li className="list-item">
+                                    <NavLink to="/members" className="nav__link" activeClassName="active" onClick={() => { scrollToTop(); closeNav(); }}>Members</NavLink>
+                                </li>
+                                <li className="list-item">
+                                    <NavLink to="/contactus" className="nav__link" activeClassName="active" onClick={() => { scrollToTop(); closeNav(); }}>Contact Us</NavLink>
+                                </li>
+                            </div>
+                        </nav>
+                    </section>
+                </div>
+            </header>
+        </div>
     );
 }
 

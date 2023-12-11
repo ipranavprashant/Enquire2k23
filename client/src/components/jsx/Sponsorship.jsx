@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../styles/Contact.css';
 import '../styles/Heading.css';
 
-const ContactUs = () => {
+const Sponsorship = () => {
     const [formData, setFormData] = useState({
         firstname: '',
         lastname: '',
@@ -22,7 +22,7 @@ const ContactUs = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://enquire-backend.onrender.com/api/contact', formData);
+            const response = await axios.post('https://enquire-backend.onrender.com/api/sponsorship', formData);
             console.log('Message sent successfully:', response.data);
             setIsSubmitted(true);
             setFormData({
@@ -42,9 +42,8 @@ const ContactUs = () => {
             <div className="innerwrap">
                 <section className="section1 clearfix">
                     <div className="beautify-heading">
-                        <h1>Contact Us</h1>
+                        <h1>Sponsorship</h1>
                         <p>Or e-mail us at <a href="mailto:enquireclub@nitc.ac.in">enquireclub@nitc.ac.in</a></p>
-
                     </div>
                 </section>
 
@@ -74,7 +73,7 @@ const ContactUs = () => {
                                             className="col2 first"
                                             type="text"
                                             name="firstname"
-                                            placeholder="FirstName"
+                                            placeholder="First Name"
                                             onChange={handleChange}
                                             value={formData.firstname}
                                             required
@@ -83,7 +82,7 @@ const ContactUs = () => {
                                             className="col2 last"
                                             type="text"
                                             name="lastname"
-                                            placeholder="LastName"
+                                            placeholder="Last Name"
                                             onChange={handleChange}
                                             value={formData.lastname}
                                             required
@@ -134,4 +133,4 @@ const ContactUs = () => {
     );
 };
 
-export default ContactUs;
+export default Sponsorship;

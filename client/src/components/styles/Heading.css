@@ -55,3 +55,9 @@ h1 em {
   margin-left: -50px;
   background-color: #b80000;
 }
+
+@media (max-width : 767px) {
+  h1{
+    font-size: 30px;
+  }
+}

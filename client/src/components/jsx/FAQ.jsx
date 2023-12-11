@@ -1,9 +1,14 @@
 import React from 'react'
 import '../styles/FAQ.css'
+import '../styles/Heading.css';
+
 
 const FAQ = () => {
     return (
         <>
+            <div className="beautify-heading">
+                <h1>FAQ's</h1>
+            </div>
             <details>
                 <summary>FAQ 1</summary>
                 <div class="content">

@@ -177,7 +177,7 @@ const Members = () => {
     },
     {
       id: 19,
-      name: "Gunda Chandana Treasurer",
+      name: "Gunda Chandana",
       position: "Alumni",
       image: Gunda_Chandana_Treasurer
     },

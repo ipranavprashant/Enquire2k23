@@ -6,6 +6,14 @@ import { Newsletter } from './Newsletter';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     return (
         <>
             <footer className="footer">
@@ -14,19 +22,19 @@ const Footer = () => {
                         <div className="footer-col">
                             <h4>Club</h4>
                             <ul>
-                                <li><NavLink to="/about" className="nav__link">about us</NavLink></li>
-                                <li><NavLink to="/gallery" className="nav__link">Gallery</NavLink></li>
-                                <li><NavLink to="/about" className="nav__link">privacy policy</NavLink></li>
-                                <li><NavLink to="/members" className="nav__link">alumni</NavLink></li>
+                                <li><NavLink to="/about" className="nav__link" onClick={scrollToTop}>about us</NavLink></li>
+                                <li><NavLink to="/gallery" className="nav__link" onClick={scrollToTop}>Gallery</NavLink></li>
+                                <li><NavLink to="/privacypolicy" className="nav__link" onClick={scrollToTop}>privacy policy</NavLink></li>
+                                <li><NavLink to="/members" className="nav__link" onClick={scrollToTop}>alumni</NavLink></li>
                             </ul>
                         </div>
                         <div className="footer-col">
                             <h4>get help</h4>
                             <ul>
-                                <li><NavLink to="/faq" className="nav__link">FAQ</NavLink></li>
-                                <li><NavLink to="/archives" className="nav__link">Archives</NavLink></li>
-                                <li><NavLink to="/contactus" className="nav__link">Raise a Dispute</NavLink></li>
-                                <li><NavLink to="/contactus" className="nav__link">Sponsorship</NavLink></li>
+                                <li><NavLink to="/faq" className="nav__link" onClick={scrollToTop}>FAQ</NavLink></li>
+                                <li><NavLink to="/archives" className="nav__link" onClick={scrollToTop}>Archives</NavLink></li>
+                                <li><NavLink to="/raise-a-dispute" className="nav__link" onClick={scrollToTop}>Raise a Dispute</NavLink></li>
+                                <li><NavLink to="/sponsorship" className="nav__link" onClick={scrollToTop}>Sponsorship</NavLink></li>
                             </ul>
                         </div>
                         <div className="footer-col">
