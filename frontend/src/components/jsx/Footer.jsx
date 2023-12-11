@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaXTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa6';
+import { NavLink } from 'react-router-dom';
 import '../styles/Footer.css';
 import { Newsletter } from './Newsletter';
 
@@ -12,19 +13,19 @@ const Footer = () => {
                         <div className="footer-col">
                             <h4>Club</h4>
                             <ul>
-                                <li><a href="/about">about us</a></li>
-                                <li><a href="/events">events</a></li>
-                                <li><a href="events">privacy policy</a></li>
-                                <li><a href="members">alumni</a></li>
+                                <li><NavLink to="/about" className="nav__link">about us</NavLink></li>
+                                <li><NavLink to="/events" className="nav__link">events</NavLink></li>
+                                <li><NavLink to="/about" className="nav__link">privacy policy</NavLink></li>
+                                <li><NavLink to="/members" className="nav__link">alumni</NavLink></li>
                             </ul>
                         </div>
                         <div className="footer-col">
                             <h4>get help</h4>
                             <ul>
-                                <li><a href="/contactus">FAQ</a></li>
-                                <li><a href="/contactus">Contact Us</a></li>
-                                <li><a href="contactus">Raise a dispute</a></li>
-                                <li><a href="contactus">Sponsorship</a></li>
+                                <li><NavLink to="/aboutus" className="nav__link">FAQ</NavLink></li>
+                                <li><NavLink to="/aboutus" className="nav__link">Contact Us</NavLink></li>
+                                <li><NavLink to="/aboutus" className="nav__link">Raise a Dispute</NavLink></li>
+                                <li><NavLink to="/aboutus" className="nav__link">Sponsorship</NavLink></li>
                             </ul>
                         </div>
                         <div className="footer-col">

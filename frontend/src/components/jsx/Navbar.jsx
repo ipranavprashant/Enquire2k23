@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom'; // Import NavLink
+import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
 import EnquireLogo from '../../assets/EnquireLogo.jpeg';
 
