@@ -22,7 +22,7 @@ const ContactUs = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', formData);
+            const response = await axios.post('https://enquire-backend.onrender.com/api/contact', formData);
             console.log('Message sent successfully:', response.data);
             setIsSubmitted(true);
             setFormData({

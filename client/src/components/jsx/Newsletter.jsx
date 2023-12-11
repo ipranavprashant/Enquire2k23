@@ -14,7 +14,7 @@ export const Newsletter = () => {
         e.preventDefault();
 
         try {
-            await axios.post('http://localhost:5000/api/newsletter', { email });
+            await axios.post('https://enquire-backend.onrender.com/api/newsletter', { email });
             setIsSubscribed(true);
             setEmail('');
         } catch (error) {
