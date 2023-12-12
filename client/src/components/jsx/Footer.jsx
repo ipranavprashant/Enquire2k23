@@ -48,7 +48,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className='footer-col'>
-                            <h4>Subscribe to our Newsletter</h4>
+                            <h4>Stay tuned with Enquire!</h4>
                             <Newsletter />
                             <div className='cp-container'>
                                 <p className='cp-text'>© Copyright {currentYear} Enquire Quiz Club. All rights reserved.</p>

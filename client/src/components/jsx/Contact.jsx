@@ -73,7 +73,7 @@ const ContactUs = () => {
                                             className="col2 first"
                                             type="text"
                                             name="firstname"
-                                            placeholder="FirstName"
+                                            placeholder="First Name"
                                             onChange={handleChange}
                                             value={formData.firstname}
                                             required
@@ -82,7 +82,7 @@ const ContactUs = () => {
                                             className="col2 last"
                                             type="text"
                                             name="lastname"
-                                            placeholder="LastName"
+                                            placeholder="Last Name"
                                             onChange={handleChange}
                                             value={formData.lastname}
                                             required

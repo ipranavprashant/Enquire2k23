@@ -40,8 +40,8 @@ export const Newsletter = () => {
                         required
                     />
                 </div>
-                <button className="submit" type="submit">Submit</button>
-                {isSubscribed && window.alert("Thanks for Subscribing!")}
+                <button className="submit" type="submit">Subscribe</button>
+                {isSubscribed && window.alert("Thanks for Subscribing. We will keep you posted with the updates!")}
             </div>
         </form>
     );
