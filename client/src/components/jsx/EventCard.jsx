@@ -20,13 +20,13 @@ const EventCard = (props) => {
 
     const handleDetailsLinkClick = (e) => {
         e.preventDefault();
-        onClick(); // Trigger the click handler to open the modal
+        onClick();
     };
 
     const handleRegisterLinkClick = () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth', // You can use 'auto' instead of 'smooth' for instant scrolling
+            behavior: 'smooth',
         });
     };
 
@@ -55,13 +55,13 @@ const EventCard = (props) => {
                 <time dateTime={time}>{time}</time>
             </div>
             <div className="event-details">
-                <a
+                <NavLink
                     className="link details"
-                    href={detailsLink}
+                    to={detailsLink}
                     onClick={handleDetailsLinkClick}
                 >
                     DETAILS
-                </a>
+                </NavLink>
             </div>
             <div className="event-tickets">
                 <NavLink className="link" to={registerLink} onClick={handleRegisterLinkClick}>

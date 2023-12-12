@@ -14,6 +14,7 @@ import Home from './components/jsx/Home';
 import Gallery from './components/jsx/Gallery';
 import Sponsorship from './components/jsx/Sponsorship';
 import RaiseADispute from './components/jsx/RaiseADispute';
+import ScrollToTopArrow from './components/jsx/ScrollToTopArrow';
 
 const App = () => {
   return (
@@ -27,13 +28,14 @@ const App = () => {
         <Route path="/members" element={<Members />} />
         <Route path="/archives" element={<Archives />} />
         <Route path="/contactus" element={<Contact />} />
-        <Route path="/registration-panel" element={<GoogleForm />} />
+        <Route path="/registration-panel/:eventName" element={<GoogleForm />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/raise-a-dispute" element={<RaiseADispute />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
+      <ScrollToTopArrow />
       <Footer />
     </>
   );

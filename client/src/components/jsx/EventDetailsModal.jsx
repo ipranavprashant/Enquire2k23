@@ -23,7 +23,6 @@ const EventDetailsModal = ({ event, onClose }) => {
                                 {event.venueName}
                             </a>
                         </p>
-                        {/* Add more details as needed */}
                     </div>
                 </div>
             </div>

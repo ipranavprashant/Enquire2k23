@@ -76,19 +76,19 @@ const Navbar = () => {
                         <nav className="header-nav" role="navigation">
                             <div className={`nav__list ${isExpanded ? 'expanded' : ''}`} aria-expanded={isExpanded}>
                                 <li className="list-item">
-                                    <NavLink to="/" className="nav__link" activeClassName="active" onClick={() => { scrollToTop(); closeNav(); }}>Home</NavLink>
+                                    <NavLink to="/" className="nav__link" activeclassname="active" onClick={() => { scrollToTop(); closeNav(); }}>Home</NavLink>
                                 </li>
                                 <li className="list-item">
-                                    <NavLink to="/about" className="nav__link" activeClassName="active" onClick={() => { scrollToTop(); closeNav(); }}>About</NavLink>
+                                    <NavLink to="/about" className="nav__link" activeclassname="active" onClick={() => { scrollToTop(); closeNav(); }}>About</NavLink>
                                 </li>
                                 <li className="list-item">
-                                    <NavLink to="/events" className="nav__link" activeClassName="active" onClick={() => { scrollToTop(); closeNav(); }}>Events</NavLink>
+                                    <NavLink to="/events" className="nav__link" activeclassname="active" onClick={() => { scrollToTop(); closeNav(); }}>Events</NavLink>
                                 </li>
                                 <li className="list-item">
-                                    <NavLink to="/members" className="nav__link" activeClassName="active" onClick={() => { scrollToTop(); closeNav(); }}>Members</NavLink>
+                                    <NavLink to="/members" className="nav__link" activeclassname="active" onClick={() => { scrollToTop(); closeNav(); }}>Members</NavLink>
                                 </li>
                                 <li className="list-item">
-                                    <NavLink to="/contactus" className="nav__link" activeClassName="active" onClick={() => { scrollToTop(); closeNav(); }}>Contact Us</NavLink>
+                                    <NavLink to="/contactus" className="nav__link" activeclassname="active" onClick={() => { scrollToTop(); closeNav(); }}>Contact Us</NavLink>
                                 </li>
                             </div>
                         </nav>

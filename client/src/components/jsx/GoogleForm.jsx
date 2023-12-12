@@ -1,12 +1,15 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import '../styles/GoogleForm.css';
-import '../styles/Heading.css'
+import '../styles/Heading.css';
 
 const GoogleForm = () => {
+    // Using react-router-dom's useParams hook to get the route parameters
+    const { eventName } = useParams();
     return (
         <>
             <div className='beautify-heading'>
-                <h1>Registration</h1>
+                <h1>{eventName ? `Registration for ${eventName}` : 'Registration'}</h1>
             </div>
             <div className='container-googleform'>
                 <iframe

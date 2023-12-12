@@ -1,0 +1,21 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Glassy white color with opacity */
+    color: #333; /* Text color */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+  }
+  
+  .scroll-to-top.visible {
+    display: block;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: rgba(255, 255, 255, 1); /* Solid white color on hover */
+  }
+  
