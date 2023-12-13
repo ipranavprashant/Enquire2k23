@@ -2,9 +2,9 @@ import React from 'react'
 import '../styles/Home.css'
 import Hero from './Hero'
 import About from './About'
-import Events from './Events'
-import Members from './Members'
 import ContactUs from './Contact'
+import MajorEvents from './MajorEvents'
+import Executives from './Executives'
 
 const Home = () => {
   return (
@@ -18,11 +18,11 @@ const Home = () => {
       </div>
       <div class="devicer"></div>
       <div className='vertical-gap'>
-        <Events />
+        <MajorEvents />
       </div>
       <div class="devicer"></div>
       <div className='vertical-gap'>
-        <Members />
+        <Executives />
       </div>
       <div class="devicer"></div>
       <div>

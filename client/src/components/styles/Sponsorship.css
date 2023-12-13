@@ -1,0 +1,26 @@
+/* Add your existing CSS styles for the marquee here */
+
+.pdf-links {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px;
+  }
+  
+  .pdf-button {
+    background-color: #3498db; /* Change the color as needed */
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px; /* Add margin for some space between buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pdf-button:hover {
+    background-color: #2980b9; /* Change the hover color as needed */
+  }
+  

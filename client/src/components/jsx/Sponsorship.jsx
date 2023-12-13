@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles/Sponsorship.css';
 import '../styles/Contact.css';
 import '../styles/Heading.css';
+import whoarewe from '../../assets/sponsorshipdocs/whoarewe.pdf';
+import whatcanweoffer from '../../assets/sponsorshipdocs/whatcanweoffer.pdf';
+import Marquee from './Marquee';
+import Reach from './Reach';
 
 const Sponsorship = () => {
     const [formData, setFormData] = useState({
@@ -43,10 +48,36 @@ const Sponsorship = () => {
                 <section className="section1 clearfix">
                     <div className="beautify-heading">
                         <h1>Sponsorship</h1>
-                        <p>Or e-mail us at <a href="mailto:enquireclub@nitc.ac.in">enquireclub@nitc.ac.in</a></p>
+                    </div>
+                    <p>
+                        While the club has made it a habit to host quality quizzes round the calendar, the support we've
+                        had over the years from our sponsors has been the driving force behind the successful organization
+                        of the events. It's for this single reason that we value sponsorship at a high level, without which
+                        the events would never be a reality. Do see the following documents to understand the benefits of
+                        sponsoring us:
+                    </p>
+
+                    <div className="pdf-links">
+                        <a href={whoarewe} download>
+                            <button className="pdf-button">Marketing Brochure</button>
+                        </a>
+                        <a href={whatcanweoffer} download>
+                            <button className="pdf-button">General Proposal Scheme</button>
+                        </a>
                     </div>
                 </section>
-
+                <div className="beautify-heading vertical-gap">
+                    <h1>Our Previous Sponsors</h1>
+                </div>
+                <Marquee />
+                <div className="beautify-heading vertical-gap">
+                    <h1>Our Reach</h1>
+                </div>
+                <Reach />
+                <div className="beautify-heading vertical-gap">
+                    <h1>React out to us</h1>
+                </div>
+                <p className='to-centre'>Or e-mail us at <span>&nbsp;</span><a href="mailto:enquireclub@nitc.ac.in"> enquireclub@nitc.ac.in</a></p>
                 <section className="section2 clearfix">
                     <div className="col2 column1 first">
                         <iframe

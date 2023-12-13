@@ -1,0 +1,66 @@
+/* ReachComponent.css */
+
+.reach-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .logo-container img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+  }
+  
+  .reach-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .followers-container .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ff5050;
+  }
+  
+  .map-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Reach.css */
+
+.followers-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  @media only screen and (max-width: 960px) {
+    .icon{
+        display: none;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+  }
+  

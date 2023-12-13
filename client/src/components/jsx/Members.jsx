@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Image from 'next/image';
 import '../styles/Members.css';
 import '../styles/Heading.css'
 
@@ -312,119 +311,107 @@ const Members = () => {
   const member = [
     {
       id: 1,
+      name: "Linda Mary Zacharia",
+      position: "Secretary",
+      image: AbhijithB_Mohan_Alst_Secretary
+    },
+    {
+      id: 2,
+      name: "Harikrishnan N",
+      position: "Quiz Head & Quizzing Hometeam Captain",
+      image: Abhiram_K_R
+    },
+    {
+      id: 3,
+      name: "Aabid Mohamed A",
+      position: "Joint Secretary",
+      image: Abhishek_Gautam
+    },
+    {
+      id: 4,
+      name: "Lakshmipriya A",
+      position: "Assistant Secretary",
+      image: Abin_Gigo_Joseph_Treasurer
+    },
+    {
+      id: 5,
+      name: "Tilottama Basu",
+      position: "Assistant Secretary",
+      image: Abin_Gigo_Joseph_Treasurer
+    },
+    {
+      id: 6,
+      name: "S Sudhagar",
+      position: "Treasurer",
+      image: Adithya_Ankam
+    },
+    {
+      id: 7,
+      name: "Akash E K",
+      position: "Treasurer",
+      image: Akhil_R_Kurup
+    },
+    {
+      id: 8,
+      name: "Aswath P R",
+      position: "Event Coordinator",
+      image: Aleena_Ann_George_Marketing_Head
+    },
+    {
+      id: 9,
+      name: "Joel George John",
+      position: "Event Coordinator",
+      image: Asit_Kumar
+    },
+    {
+      id: 10,
+      name: "K Venkat Bharath",
+      position: "Content Head",
+      image: Bandi_Kapil_Kaushik
+    },
+    {
+      id: 11,
+      name: "Ananthu Krishnan U",
+      position: "Design Head",
+      image: Bhavin_P_V_Social_Media_Head
+    },
+    {
+      id: 12,
+      name: "Aswin S",
+      position: "Media Head",
+      image: Chinthalapudi_Hari_Prasad
+    },
+    {
+      id: 13,
+      name: "Shaik Nagur Basha",
+      position: "PRC Head",
+      image: Chitturi_Sakshvith_Sanjeev
+    },
+    {
+      id: 14,
+      name: "Yathul P Deep",
+      position: "PRC Head",
+      image: Deviprasad_V_R
+    },
+    {
+      id: 15,
+      name: "Albert T Alex",
+      position: "Marketing Heads",
+      image: Emily_Eldose
+    },
+    {
+      id: 16,
+      name: "P E Thanseehu Rahman",
+      position: "Marketing Head",
+      image: Gautham_Krishna_Joint_Secretary
+    },
+    {
+      id: 17,
       name: "Pranav Prashant",
       position: "Tech Head",
-      image: Pranav_Prashant
-    }]
-  //   {
-  //     id: 2,
-  //     name: "Madhav Prabhu C M",
-  //     position: "Joint Secretary",
-  //     image: Madhav
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Mohammed Ameen",
-  //     position: "Treasurer",
-  //     image: Ameen
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "Vysakh Premkumar",
-  //     position: "Mentor",
-  //     image: Vysakh
-  //   },
-  //   {
-  //     id: 5,
-  //     name: "Sreevalsan S",
-  //     position: "Event Coordinator",
-  //     image: Sree
-  //   },
-  //   {
-  //     id: 6,
-  //     name: "Neena M S",
-  //     position: "Content and Outreach",
-  //     image: Neena
-  //   },
-  //   {
-  //     id: 7,
-  //     name: "Hemanth Chodisetti",
-  //     position: "Content and Outreach",
-  //     image: Hemanth
-  //   },
-  //   {
-  //     id: 8,
-  //     name: "Afraz Ahmed",
-  //     position: "Marketing Head",
-  //     image: Afraz
-  //   },
-  //   {
-  //     id: 9,
-  //     name: "Joel George John",
-  //     position: "Media Head",
-  //     image: JoelJohn
-  //   },
-  //   {
-  //     id: 10,
-  //     name: "Alen Antony",
-  //     position: "Member",
-  //     image: Alen
-  //   },
-  //   {
-  //     id: 11,
-  //     name: "Unnati",
-  //     position: "Member",
-  //     image: Unnati
-  //   },
-  //   {
-  //     id: 12,
-  //     name: "Bhukya Chetan Ram",
-  //     position: "Member",
-  //     image: Bhukya
-  //   },
-  //   {
-  //     id: 13,
-  //     name: "Juby Johnson",
-  //     position: "Member",
-  //     image: Juby
-  //   },
-  //   {
-  //     id: 14,
-  //     name: "Piyush Soni",
-  //     position: "Member",
-  //     image: Piyush
-  //   },
-  //   {
-  //     id: 15,
-  //     name: "Pranav Prashant",
-  //     position: "Member",
-  //     image: Pranav
-  //   },
-  //   {
-  //     id: 16,
-  //     name: "Pranav R Nair",
-  //     position: "Member",
-  //     image: PranavNair
-  //   },
-  //   {
-  //     id: 17,
-  //     name: "Simmon Mathew Shaji",
-  //     position: "Member",
-  //     image: Simmon
-  //   },
-  //   {
-  //     id: 18,
-  //     name: "Vedasree Rodi",
-  //     position: "Member",
-  //     image: Vedasree
-  //   },
-  //   {
-  //     id: 19,
-  //     name: "Chacko James",
-  //     position: "Member",
-  //     image: Chacko
-  //   }
-  // ]
+      image: Gayathri
+    }
+  ]
 
   // Filter event cards based on the search term
   const filteredMembers = member.filter((m) =>

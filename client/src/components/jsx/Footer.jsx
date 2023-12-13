@@ -25,7 +25,7 @@ const Footer = () => {
                                 <li><NavLink to="/about" className="nav__link" onClick={scrollToTop}>about us</NavLink></li>
                                 <li><NavLink to="/gallery" className="nav__link" onClick={scrollToTop}>Gallery</NavLink></li>
                                 <li><NavLink to="/privacypolicy" className="nav__link" onClick={scrollToTop}>privacy policy</NavLink></li>
-                                <li><NavLink to="/members" className="nav__link" onClick={scrollToTop}>alumni</NavLink></li>
+                                <li><NavLink to="/members" className="nav__link" onClick={scrollToTop}>our people</NavLink></li>
                             </ul>
                         </div>
                         <div className="footer-col">
