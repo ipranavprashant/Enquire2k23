@@ -11,6 +11,8 @@
     margin-bottom: 2rem;
 }
 
+
+
 .container-registrationform input,
 .container-registrationform select {
     width: 100%;
@@ -71,6 +73,14 @@
 .phone-inputs {
     display: flex;
     align-items: start;
+}
+
+.success-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
 }
 
 /* Change styles for signup button on extra small screens */
