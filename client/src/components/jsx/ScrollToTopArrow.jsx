@@ -40,7 +40,7 @@ const ScrollToTopArrow = () => {
     // Wait for the scroll to complete before re-attaching the scroll event listener
     setTimeout(() => {
       window.addEventListener('scroll', handleScroll);
-    }, 5000); // Adjust the timeout as needed
+    }, 20000); // Adjust the timeout as needed
   };
 
   const scrollToBottom = (e) => {
@@ -55,7 +55,7 @@ const ScrollToTopArrow = () => {
 
     setTimeout(() => {
       window.addEventListener('scroll', handleScroll);
-    }, 5000);
+    }, 20000);
   };
 
 
@@ -68,7 +68,7 @@ const ScrollToTopArrow = () => {
 
       isScrolling = setTimeout(() => {
         setIsVisible(false);
-      }, 5000);
+      }, 20000);
     };
 
     window.addEventListener('scroll', handleScrollThrottled);

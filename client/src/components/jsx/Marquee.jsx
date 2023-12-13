@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Marquee.css'; // Add your CSS styles for the marquee
+import '../styles/Marquee.css';
 
 const Marquee = () => {
   const logos = ['Forbes', 'Inc', 'Nat_Geo', 'Red_Cross', 'Discovery_Channel', 'REI', 'Fortune'];

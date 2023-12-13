@@ -46,7 +46,7 @@ import Suvishal_Kumar_Secretary from "../../assets/members/2021-2022/Suvishal Ku
 
 //current people images
 //B21
-import Pranav_Prashant from "../../assets/members/2022-2023/Pranav_Prashant_Tech_Head.jpg"
+// import Pranav_Prashant from "../../assets/members/2022-2023/Pranav_Prashant_Tech_Head.jpg"
 //B22
 
 const Members = () => {

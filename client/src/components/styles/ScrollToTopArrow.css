@@ -9,6 +9,7 @@
     cursor: pointer;
     display: none;
     transition: background-color 0.3s;
+    z-index: 30000;
   }
   
   .scroll-to-top.visible {

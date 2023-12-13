@@ -11,19 +11,19 @@ const ReachComponent = () => {
 
             <div className="followers-container">
                 <span className="icon">&#x2665;</span>
-                <p>Large number of schools and colleges within and outside of Kerala</p>
+                <p className="reach-text">Large number of schools and colleges within and outside of Kerala</p>
                 <span className="icon">&#x2665;</span>
             </div>
 
             <div className="followers-container">
                 <span className="icon">&#x2665;</span>
-                <p>Cummulative of more than 10k followers across all our socials</p>
+                <p className="reach-text">Cumulative of more than 10k followers across all our socials</p>
                 <span className="icon">&#x2665;</span>
             </div>
 
             <div className="followers-container">
                 <span className="icon">&#x2665;</span>
-                <p>More than 30,000 students in more than 15 districts</p>
+                <p className="reach-text">More than 30,000 students in more than 15 districts</p>
                 <span className="icon">&#x2665;</span>
             </div>
         </div>

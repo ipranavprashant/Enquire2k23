@@ -61,7 +61,6 @@ const InfiniteScrollImage = () => {
 
   const handleImageClick = (index) => {
     if (window.innerWidth > 768) {
-      // Only set zoomedIndex on devices larger than 768px
       setZoomedIndex(index === zoomedIndex ? null : index);
     }
   };

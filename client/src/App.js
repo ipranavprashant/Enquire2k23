@@ -8,13 +8,14 @@ import NotFound from './components/jsx/404';
 import About from './components/jsx/About';
 import Archives from './components/jsx/Archives';
 import Contact from './components/jsx/Contact';
-import GoogleForm from './components/jsx/GoogleForm';
+// import GoogleForm from './components/jsx/GoogleForm';
 import FAQ from './components/jsx/FAQ';
 import Home from './components/jsx/Home';
 import Gallery from './components/jsx/Gallery';
 import Sponsorship from './components/jsx/Sponsorship';
 import RaiseADispute from './components/jsx/RaiseADispute';
 import ScrollToTopArrow from './components/jsx/ScrollToTopArrow';
+import Registration from './components/jsx/Registration';
 
 const App = () => {
   return (
@@ -28,7 +29,8 @@ const App = () => {
         <Route path="/members" element={<Members />} />
         <Route path="/archives" element={<Archives />} />
         <Route path="/contactus" element={<Contact />} />
-        <Route path="/registration-panel/:eventName" element={<GoogleForm />} />
+        {/* <Route path="/registration-panel/:eventName" element={<GoogleForm />} /> */}
+        <Route path="/registration-panel/:eventName" element={<Registration />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/sponsorship" element={<Sponsorship />} />

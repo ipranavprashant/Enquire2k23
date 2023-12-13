@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Members.css';
 import '../styles/Heading.css'
 
-//Executives Images
+//Executive's Images
 import AbhijithB_Mohan_Alst_Secretary from "../../assets/members/2021-2022/Abhijith B Mohan__Assistant Secretary.png";
 import Abhiram_K_R from "../../assets/members/2021-2022/Abhiram K R.png";
 import Abhishek_Gautam from "../../assets/members/2021-2022/Abhishek Gautam .png";

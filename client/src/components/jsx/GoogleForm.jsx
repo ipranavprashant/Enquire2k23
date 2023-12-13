@@ -4,7 +4,6 @@ import '../styles/GoogleForm.css';
 import '../styles/Heading.css';
 
 const GoogleForm = () => {
-    // Using react-router-dom's useParams hook to get the route parameters
     const { eventName } = useParams();
     return (
         <>
