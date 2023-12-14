@@ -9,6 +9,12 @@ const createRegistration = async (req, res) => {
         const mobilenumber = req.body.mobilenumber;
         const eventname = req.body.eventname;
 
+        const existingRegistration = await Registration.findOne({ email });
+
+        if (existingRegistration) {
+            return res.status(409).json({ error: "Duplicate email. This email is already registered." });
+        }
+
         const createRegistration = await Registration.create({
             name: name,
             email: email,

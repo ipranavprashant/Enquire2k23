@@ -26,7 +26,7 @@ const About = () => {
 
                     <div className="about-section">
                         <p className="about-paragraph">
-                        The Enquire quiz league is the flagship event that Enquire offers. With a gathering of ardent quizzers and knowledge enthusiasts carrying forth an 8 year old legacy, started in Kochi, aspired by a like minded team. Initiated to stand as a beacon of knowledge and awareness, EQL today, conducts quizzes across the state drawing a crowd of around 300 participants and increasing by the year. This year, EQL comes to you, bigger and better, with its 8th edition, producing brain cracking challenges and offering prizes worth   ₹ 30,000
+                            The Enquire quiz league is the flagship event that Enquire offers. With a gathering of ardent quizzers and knowledge enthusiasts carrying forth an 8 year old legacy, started in Kochi, aspired by a like minded team. Initiated to stand as a beacon of knowledge and awareness, EQL today, conducts quizzes across the state drawing a crowd of around 300 participants and increasing by the year. This year, EQL comes to you, bigger and better, with its 8th edition, producing brain cracking challenges and offering prizes worth   ₹ 30,000
                         </p>
                     </div>
                 </div>

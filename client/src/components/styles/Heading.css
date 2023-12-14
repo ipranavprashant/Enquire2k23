@@ -11,6 +11,7 @@ h1 {
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   font-family:Poppins;
 }
 

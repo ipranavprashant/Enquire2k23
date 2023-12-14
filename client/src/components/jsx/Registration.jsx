@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { css } from '@emotion/react';
 import { PacmanLoader } from 'react-spinners';
 import '../styles/Heading.css';
 import '../styles/Registration.css';
-
-const override = css`
-    display: flex;
-    text-align: center;
-    border-color: red;
-`;
+import SuccessCard from './SuccessCard';
 
 const Registration = () => {
     const { eventName } = useParams();
@@ -44,11 +38,32 @@ const Registration = () => {
 
             setRegistrationSuccess(true);
         } catch (error) {
+            if (error.response) {
+                // The request was made and the server responded with a status code
+                if (error.response.status === 500) {
+                    // Internal server error
+                    window.alert("Internal server error. Please try again later.");
+                } else if (error.response.status === 409) {
+                    // Duplicate email error
+                    window.alert("This email is already registered.");
+                } else {
+                    // Other status codes, handle as needed
+                    window.alert(`Error: ${error.response.status}`);
+                }
+            } else if (error.request) {
+                // The request was made but no response was received
+                window.alert("No response received from the server. Please check your internet connection.");
+            } else {
+                // Something happened in setting up the request that triggered an Error
+                window.alert(`Error: ${error.message}`);
+            }
+
             console.error('Error registering:', error);
         } finally {
             setLoading(false);
         }
     };
+
 
     return (
         <>
@@ -59,14 +74,15 @@ const Registration = () => {
             <div className='to-centre'>
                 {loading ? (
                     <div className="loading-message">
-                        <PacmanLoader color={'#36D7B7'} css={override} size={35} />
+                        <div className='pacman'>
+                            <PacmanLoader color={'#36D7B7'} size={35} />
+                        </div>
                         <br />
                         <h4 className='to-centre'>Please wait while we process your registration...</h4>
+                        <h4 className='to-centre'>This might take upto a minute..</h4>
                     </div>
                 ) : registrationSuccess ? (
-                    <div className="success-message">
-                        Registration successful! <br />Thank you for registering.
-                    </div>
+                    <SuccessCard message="Registration Successful" />
                 ) : (
                     <form onSubmit={handleSubmit}>
                         <div className="container-registrationform">

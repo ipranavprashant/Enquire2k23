@@ -86,6 +86,13 @@
 .loading-message {
     min-height: 40vh;
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+.pacman{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 /* Change styles for signup button on extra small screens */

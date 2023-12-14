@@ -4,6 +4,7 @@ import { css } from '@emotion/react';
 import { PacmanLoader } from 'react-spinners';
 import '../styles/Contact.css';
 import '../styles/Heading.css';
+import SuccessCard from './SuccessCard';
 
 const override = css`
     display: flex;
@@ -79,17 +80,16 @@ const ContactUs = () => {
                         <div className="sec2contactform">
                             {isLoading ? (
                                 <div className="loading-container">
-                                    <PacmanLoader color={'#36D7B7'} css={override} size={35} />
-                                    <p>Loading...</p>
+                                    <div className='pacman'>
+                                        <PacmanLoader color={'#36D7B7'} size={35} />
+                                    </div>
+                                    <br />
+                                    <h4 className='to-centre'>Loading...</h4>
                                 </div>
                             ) : (
                                 <>
                                     {isSubmitted ? (
-                                        <div className="success-message-container">
-                                            <p className="success-message">
-                                                Thanks for contacting us! We will get back to you shortly.
-                                            </p>
-                                        </div>
+                                        <SuccessCard message="Thanks for contacting us!" />
                                     ) : (
                                         <form onSubmit={handleSubmit}>
                                             <div className="clearfix">

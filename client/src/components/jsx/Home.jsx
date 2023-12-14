@@ -9,15 +9,16 @@ import Executives from './Executives'
 const Home = () => {
   return (
     <>
-      <div className='to-centre'>
+      {/* <div className='to-centre'> */}
+        <div>
         <Hero />
       </div>
-      <div class="devicer"></div>
+      {/* <div class="devicer"></div> */}
       <div className='vertical-gap'>
         <About />
       </div>
       <div class="devicer"></div>
-      <div className='vertical-gap'>
+      <div className='vertical-gap' id="Events">
         <MajorEvents />
       </div>
       <div class="devicer"></div>
