@@ -83,6 +83,11 @@
     text-align: center;
 }
 
+.loading-message {
+    min-height: 40vh;
+    margin-bottom: 2rem;
+}
+
 /* Change styles for signup button on extra small screens */
 @media screen and (max-width: 760px) {
 

@@ -9,6 +9,7 @@ const RegistrationSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
+        unique: true
     },
     college: {
         type: String,
@@ -20,6 +21,9 @@ const RegistrationSchema = new mongoose.Schema({
     mobilenumber: {
         type: String,
         required: true
+    },
+    eventname: {
+        type: String
     },
     date: {
         type: Date,

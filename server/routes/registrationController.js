@@ -7,13 +7,15 @@ const createRegistration = async (req, res) => {
         const college = req.body.college;
         const phoneCode = req.body.phoneCode;
         const mobilenumber = req.body.mobilenumber;
+        const eventname = req.body.eventname;
 
         const createRegistration = await Registration.create({
             name: name,
             email: email,
             college: college,
             phoneCode: phoneCode,
-            mobilenumber: mobilenumber
+            mobilenumber: mobilenumber,
+            eventname: eventname
         });
 
         res.json({ createRegistration: createRegistration });

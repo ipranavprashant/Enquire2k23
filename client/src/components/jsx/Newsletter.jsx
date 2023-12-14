@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { FaReact } from 'react-icons/fa';
 import '../styles/Newsletter.css';
 
 export const Newsletter = () => {
     const [email, setEmail] = useState('');
     const [isSubscribed, setIsSubscribed] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (e) => {
         setEmail(e.target.value);
@@ -12,6 +14,7 @@ export const Newsletter = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true);
 
         try {
             await axios.post('https://enquire-backend.onrender.com/api/newsletter', { email });
@@ -19,6 +22,11 @@ export const Newsletter = () => {
             setEmail('');
         } catch (error) {
             console.error('Error subscribing to newsletter:', error);
+        } finally {
+            setIsLoading(false);
+            if (isSubscribed) {
+                window.alert("Thanks for Subscribing. We will keep you posted with the updates!");
+            }
         }
     };
 
@@ -40,8 +48,21 @@ export const Newsletter = () => {
                         required
                     />
                 </div>
-                <button className="submit" type="submit">Subscribe</button>
-                {isSubscribed && window.alert("Thanks for Subscribing. We will keep you posted with the updates!")}
+                <button className="submit" type="submit" disabled={isLoading}>
+                    {isLoading ? (
+                        <>
+                            <FaReact className="loading-icon" />
+                            <span>Loading...</span>
+                        </>
+                    ) : (
+                        'Subscribe'
+                    )}
+                </button>
+                {/* {isSubscribed && (
+                    <div className="success-message-container">
+                        <p className="success-message">Thanks for Subscribing. We will keep you posted with the updates!</p>
+                    </div>
+                )} */}
             </div>
         </form>
     );

@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { css } from '@emotion/react';
+import { PacmanLoader } from 'react-spinners';
 import '../styles/Heading.css';
 import '../styles/Registration.css';
+
+const override = css`
+    display: flex;
+    text-align: center;
+    border-color: red;
+`;
 
 const Registration = () => {
     const { eventName } = useParams();
@@ -12,8 +20,10 @@ const Registration = () => {
         college: '',
         phoneCode: '1',
         mobilenumber: '',
+        eventname: ''
     });
     const [registrationSuccess, setRegistrationSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,15 +31,22 @@ const Registration = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
 
         try {
-            const response = await axios.post('https://enquire-backend.onrender.com/api/registration', formData);
+            const registrationData = {
+                ...formData,
+                eventname: eventName, // Include the eventname in the request payload
+            };
+
+            const response = await axios.post('https://enquire-backend.onrender.com/api/registration', registrationData);
             console.log(response.data);
 
-            // Assuming the API returns a success status, you can set the success state to true.
             setRegistrationSuccess(true);
         } catch (error) {
             console.error('Error registering:', error);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -40,7 +57,13 @@ const Registration = () => {
             </div>
 
             <div className='to-centre'>
-                {registrationSuccess ? (
+                {loading ? (
+                    <div className="loading-message">
+                        <PacmanLoader color={'#36D7B7'} css={override} size={35} />
+                        <br />
+                        <h4 className='to-centre'>Please wait while we process your registration...</h4>
+                    </div>
+                ) : registrationSuccess ? (
                     <div className="success-message">
                         Registration successful! <br />Thank you for registering.
                     </div>
@@ -299,3 +322,4 @@ const Registration = () => {
 };
 
 export default Registration;
+
