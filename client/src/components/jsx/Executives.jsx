@@ -3,23 +3,23 @@ import '../styles/Members.css';
 import '../styles/Heading.css'
 
 //Executive's Images
-import AbhijithB_Mohan_Alst_Secretary from "../../assets/members/2021-2022/Abhijith B Mohan__Assistant Secretary.png";
-import Abhiram_K_R from "../../assets/members/2021-2022/Abhiram K R.png";
-import Abhishek_Gautam from "../../assets/members/2021-2022/Abhishek Gautam .png";
-import Abin_Gigo_Joseph_Treasurer from "../../assets/members/2021-2022/Abin Gigo Joseph__Treasurer.png";
-import Abiraj_P_Y_Design_Head from "../../assets/members/2021-2022/Abiraj P Y__Design Head.png";
-import Adithya_Ankam from "../../assets/members/2021-2022/Adithya Ankam.png";
-import Akhil_R_Kurup from "../../assets/members/2021-2022/Akhil R Kurup.png";
-import Aleena_Ann_George_Marketing_Head from "../../assets/members/2021-2022/Aleena Ann George__Marketing Head.png";
-import Asit_Kumar from "../../assets/members/2021-2022/Asit Kumar.png";
-import Bandi_Kapil_Kaushik from "../../assets/members/2021-2022/Bandi Kapil Kaushik.png";
-import Bhavin_P_V_Social_Media_Head from "../../assets/members/2021-2022/Bhavin P V__Social Media Head.png";
-import Chinthalapudi_Hari_Prasad from "../../assets/members/2021-2022/Chinthalapudi Hari Prasad.jpg";
-import Chitturi_Sakshvith_Sanjeev from "../../assets/members/2021-2022/Chitturi Sakshvith Sanjeev.png";
-import Deviprasad_V_R from "../../assets/members/2021-2022/Deviprasad V R .png";
-import Emily_Eldose from "../../assets/members/2021-2022/Emily Eldose.png";
-import Gautham_Krishna_Joint_Secretary from "../../assets/members/2021-2022/Gautham Krishna__Joint Secretary.png";
-import Gayathri from "../../assets/members/2021-2022/Gayathri.png";
+import Linda_Mary_Zacharia from "../../assets/members/2022-2023/Harikrishnan N.jpg";
+import Harikrishnan_N from "../../assets/members/2022-2023/Harikrishnan N.jpg";
+import Aabid_Mohamed from "../../assets/members/2022-2023/Aabid Mohamed.jpg";
+import Lakshmipriya_S from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
+import Tilottama_Basu from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
+import S_Sudhagar from "../../assets/members/2022-2023/S Sudhagar.jpeg";
+import Akash_EK from "../../assets/members/2022-2023/Akash E K.jpg";
+import Aswath_PR from "../../assets/members/2022-2023/ASWATH P R.jpg";
+import Joel_George_John from "../../assets/members/2022-2023/Joel George John.jpg";
+import K_Venkat_Bharath from "../../assets/members/2022-2023/Joel George John.jpg";
+import Ananthu_Krishnan from "../../assets/members/2022-2023/Joel George John.jpg";
+import Aswin_Sanilkumar from "../../assets/members/2022-2023/Aswin Sanilkumar.jpg";
+import Shaik_Nagurbasha from "../../assets/members/2022-2023/Shaik Nagurbasha.jpg";
+import Yathul_P_Deep_Rermal from "../../assets/members/2022-2023/Yathul P Deep Rermal.jpg";
+import Albert_T_Alex from "../../assets/members/2022-2023/Yathul P Deep Rermal.jpg";
+import P_E_Thanseehu_Rahman from "../../assets/members/2022-2023/Yathul P Deep Rermal.jpg";
+import Pranav_Prashant from "../../assets/members/2022-2023/Pranav Prashant.jpg";
 
 const Executives = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -29,103 +29,103 @@ const Executives = () => {
             id: 1,
             name: "Linda Mary Zacharia",
             position: "Secretary",
-            image: AbhijithB_Mohan_Alst_Secretary
+            image: Linda_Mary_Zacharia
         },
         {
             id: 2,
             name: "Harikrishnan N",
             position: "Quizzing Hometeam Captain",
-            image: Abhiram_K_R
+            image: Harikrishnan_N
         },
         {
             id: 3,
             name: "Aabid Mohamed A",
             position: "Joint Secretary",
-            image: Abhishek_Gautam
+            image: Aabid_Mohamed
         },
         {
             id: 4,
             name: "Lakshmipriya A",
             position: "Assistant Secretary",
-            image: Abin_Gigo_Joseph_Treasurer
+            image: Lakshmipriya_S
         },
         {
             id: 5,
             name: "Tilottama Basu",
             position: "Assistant Secretary",
-            image: Abin_Gigo_Joseph_Treasurer
+            image: Tilottama_Basu
         },
         {
             id: 6,
             name: "S Sudhagar",
             position: "Treasurer",
-            image: Adithya_Ankam
+            image: S_Sudhagar
         },
         {
             id: 7,
             name: "Akash E K",
             position: "Treasurer",
-            image: Akhil_R_Kurup
+            image: Akash_EK
         },
         {
             id: 8,
             name: "Aswath P R",
             position: "Event Coordinator",
-            image: Aleena_Ann_George_Marketing_Head
+            image: Aswath_PR
         },
         {
             id: 9,
             name: "Joel George John",
             position: "Event Coordinator",
-            image: Asit_Kumar
+            image: Joel_George_John
         },
         {
             id: 10,
             name: "K Venkat Bharath",
             position: "Content Head",
-            image: Bandi_Kapil_Kaushik
+            image: K_Venkat_Bharath
         },
         {
             id: 11,
             name: "Ananthu Krishnan U",
             position: "Design Head",
-            image: Bhavin_P_V_Social_Media_Head
+            image: Ananthu_Krishnan
         },
         {
             id: 12,
             name: "Aswin S",
             position: "Media Head",
-            image: Chinthalapudi_Hari_Prasad
+            image: Aswin_Sanilkumar
         },
         {
             id: 13,
             name: "Shaik Nagur Basha",
             position: "PRC Head",
-            image: Chitturi_Sakshvith_Sanjeev
+            image: Shaik_Nagurbasha
         },
         {
             id: 14,
             name: "Yathul P Deep",
             position: "PRC Head",
-            image: Deviprasad_V_R
+            image: Yathul_P_Deep_Rermal
         },
         {
             id: 15,
             name: "Albert T Alex",
             position: "Marketing Heads",
-            image: Emily_Eldose
+            image: Albert_T_Alex
         },
         {
             id: 16,
             name: "P E Thanseehu Rahman",
             position: "Marketing Head",
-            image: Gautham_Krishna_Joint_Secretary
+            image: P_E_Thanseehu_Rahman
         },
         {
             id: 17,
             name: "Pranav Prashant",
             position: "Tech Head",
-            image: Gayathri
+            image: Pranav_Prashant
         }
     ]
     const filteredPeople = executives.filter((m) =>
