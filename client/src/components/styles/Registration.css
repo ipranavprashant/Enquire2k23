@@ -11,8 +11,6 @@
     margin-bottom: 2rem;
 }
 
-
-
 .container-registrationform input,
 .container-registrationform select {
     width: 100%;
@@ -30,9 +28,7 @@
 
 .container-registrationform input[type="tel"] {
     margin-right: 15px;
-    /* Added margin to create space between code and number */
     width: calc(100% - 18% - 15px);
-    /* Calculate width excluding code and margin */
 }
 
 .container-registrationform input:focus,
@@ -41,7 +37,6 @@
     outline: none;
 }
 
-/* Set a style for all buttons */
 .container-registrationform button {
     background-color: #0eb7f4;
     color: white;
@@ -62,7 +57,6 @@
 
 .phone-code {
     max-width: 300px;
-    /* Adjust the max-width as needed */
 }
 
 .phone-number {
@@ -72,7 +66,7 @@
 
 .phone-inputs {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .success-message {
@@ -89,13 +83,12 @@
     text-align: center;
 }
 
-.pacman{
+.pacman {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
 }
 
-/* Change styles for signup button on extra small screens */
 @media screen and (max-width: 760px) {
 
     .container-registrationform input,

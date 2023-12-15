@@ -8,8 +8,6 @@
     clear: both;
 }
 
-
-/* Contact Form Styling */
 .container-contactus {
     margin-top: 5rem;
     padding: 0 50px 70px;
@@ -129,8 +127,6 @@
     margin: auto;
 }
 
-
-/* @media querries */
 
 @media only screen and (max-width: 1266px) {
     .section2 {

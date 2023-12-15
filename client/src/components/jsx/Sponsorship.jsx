@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { css } from '@emotion/react';
 import { PacmanLoader } from 'react-spinners';
 import '../styles/Sponsorship.css';
 import '../styles/Contact.css';
@@ -10,12 +9,6 @@ import whatcanweoffer from '../../assets/sponsorshipdocs/whatcanweoffer.pdf';
 import Marquee from './Marquee';
 import Reach from './Reach';
 import SuccessCard from './SuccessCard';
-
-const override = css`
-    display: flex;
-    text-align: center;
-    border-color: red;
-`;
 
 const Sponsorship = () => {
     const [formData, setFormData] = useState({

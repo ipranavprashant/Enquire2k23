@@ -1,4 +1,3 @@
-// InfiniteScrollImage.js
 import React, { useState, useEffect, useRef } from 'react';
 import '../styles/Heading.css';
 import styled from 'styled-components';
@@ -8,6 +7,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 20px;
+  minHeight:'100vh'
 `;
 
 const Image = styled.img`
@@ -101,6 +101,7 @@ const InfiniteScrollImage = () => {
               onClick={() => handleImageClick(index)}
               className={isZoomed ? 'zoomed' : ''}
               onError={() => handleImageError(index)}
+              loading='lazy'
             />
           );
         })}

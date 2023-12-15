@@ -1,21 +1,16 @@
 .pdf-links {
   display: flex;
   justify-content: center;
-  /* Center the buttons horizontally */
   margin-top: 20px;
 }
 
 .pdf-button {
   flex: 1;
-  /* Use flex property to share the available space equally */
   height: 50px;
-  /* Set a fixed height for the buttons */
   background-color: #3498db;
-  /* Change the color as needed */
   color: #fff;
   padding: 10px 20px;
   margin: 0 5px;
-  /* Adjust margin for some space between buttons */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -27,5 +22,4 @@
 
 .pdf-button:hover {
   background-color: #2980b9;
-  /* Change the hover color as needed */
 }

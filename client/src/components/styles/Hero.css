@@ -43,7 +43,6 @@
     .home-hero {
         background-image: url(../../assets/hero-mobile.jpg);
         min-height: 85vh;
-        /* padding-top: 32vh; */
     }
 
     .button {

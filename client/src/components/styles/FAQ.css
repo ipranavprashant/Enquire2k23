@@ -1,9 +1,9 @@
-
-.content{
+.content {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 1rem;
 }
+
 details {
     max-width: 960px;
     margin: 1rem auto;
@@ -56,7 +56,6 @@ details[open] .content {
     animation-duration: .2s;
 }
 
-/* Fake it 'til you make it animations */
 @keyframes fold-out {
     0% {
         opacity: 0;

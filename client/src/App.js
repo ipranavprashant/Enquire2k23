@@ -16,6 +16,7 @@ import Sponsorship from './components/jsx/Sponsorship';
 import RaiseADispute from './components/jsx/RaiseADispute';
 import ScrollToTopArrow from './components/jsx/ScrollToTopArrow';
 import Registration from './components/jsx/Registration';
+import ActiveEvents from './components/jsx/ActiveEvents';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/active-events" element={<ActiveEvents />} />
         <Route path="/members" element={<Members />} />
         <Route path="/archives" element={<Archives />} />
         <Route path="/contactus" element={<Contact />} />

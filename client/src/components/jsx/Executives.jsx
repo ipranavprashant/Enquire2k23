@@ -3,23 +3,23 @@ import '../styles/Members.css';
 import '../styles/Heading.css'
 
 //Executive's Images
-import Linda_Mary_Zacharia from "../../assets/members/2022-2023/Harikrishnan N.jpg";
+import Linda_Mary_Zacharia from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
 import Harikrishnan_N from "../../assets/members/2022-2023/Harikrishnan N.jpg";
 import Aabid_Mohamed from "../../assets/members/2022-2023/Aabid Mohamed.jpg";
 import Lakshmipriya_S from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
-import Tilottama_Basu from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
+import Tilottama_Basu from "../../assets/members/2022-2023/Tilottama Basu.jpg";
 import S_Sudhagar from "../../assets/members/2022-2023/S Sudhagar.jpeg";
 import Akash_EK from "../../assets/members/2022-2023/Akash E K.jpg";
 import Aswath_PR from "../../assets/members/2022-2023/ASWATH P R.jpg";
 import Joel_George_John from "../../assets/members/2022-2023/Joel George John.jpg";
 import K_Venkat_Bharath from "../../assets/members/2022-2023/Joel George John.jpg";
-import Ananthu_Krishnan from "../../assets/members/2022-2023/Joel George John.jpg";
+import Ananthu_Krishnan from "../../assets/members/2022-2023/Ananthu.jpg";
 import Aswin_Sanilkumar from "../../assets/members/2022-2023/Aswin Sanilkumar.jpg";
 import Shaik_Nagurbasha from "../../assets/members/2022-2023/Shaik Nagurbasha.jpg";
 import Yathul_P_Deep_Rermal from "../../assets/members/2022-2023/Yathul P Deep Rermal.jpg";
-import Albert_T_Alex from "../../assets/members/2022-2023/Yathul P Deep Rermal.jpg";
-import P_E_Thanseehu_Rahman from "../../assets/members/2022-2023/Yathul P Deep Rermal.jpg";
-import Pranav_Prashant from "../../assets/members/2022-2023/Pranav Prashant.jpg";
+import Albert_T_Alex from "../../assets/members/2022-2023/Albert T Alex.jpg";
+import P_E_Thanseehu_Rahman from "../../assets/members/2022-2023/Thanseehu Rahman.jpg";
+import Pranav_Prashant from "../../assets/members/2022-2023/Pranav_Prashant.jpg";
 
 const Executives = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -112,7 +112,7 @@ const Executives = () => {
         {
             id: 15,
             name: "Albert T Alex",
-            position: "Marketing Heads",
+            position: "Marketing Head",
             image: Albert_T_Alex
         },
         {
@@ -155,6 +155,7 @@ const Executives = () => {
                                         alt="profile"
                                         width={150}
                                         height={150}
+                                        loading='lazy'
                                     />
                                 </div>
                                 <h2 className="member-name">{person.name}</h2>

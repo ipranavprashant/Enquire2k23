@@ -76,6 +76,7 @@ const ScrollToTopArrow = () => {
     return () => {
       window.removeEventListener('scroll', handleScrollThrottled);
     };
+    //  eslint-disable-next-line
   }, [prevScrollY]); // Added prevScrollY as a dependency
 
   return (

@@ -46,31 +46,30 @@ import Suvishal_Kumar_Secretary from "../../assets/members/2021-2022/Suvishal Ku
 
 //current people images
 
-//B21
-//Ececutives
+//B21 Executives
 import Linda_Mary_Zacharia from "../../assets/members/2022-2023/Harikrishnan N.jpg";
 import Harikrishnan_N from "../../assets/members/2022-2023/Harikrishnan N.jpg";
 import Aabid_Mohamed from "../../assets/members/2022-2023/Aabid Mohamed.jpg";
 import Lakshmipriya_S from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
-import Tilottama_Basu from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
+import Tilottama_Basu from "../../assets/members/2022-2023/Tilottama Basu.jpg";
 import S_Sudhagar from "../../assets/members/2022-2023/S Sudhagar.jpeg";
 import Akash_EK from "../../assets/members/2022-2023/Akash E K.jpg";
 import Aswath_PR from "../../assets/members/2022-2023/ASWATH P R.jpg";
 import Joel_George_John from "../../assets/members/2022-2023/Joel George John.jpg";
 import K_Venkat_Bharath from "../../assets/members/2022-2023/Joel George John.jpg";
-import Ananthu_Krishnan from "../../assets/members/2022-2023/Joel George John.jpg";
+import Ananthu_Krishnan from "../../assets/members/2022-2023/Ananthu.jpg";
 import Aswin_Sanilkumar from "../../assets/members/2022-2023/Aswin Sanilkumar.jpg";
 import Shaik_Nagurbasha from "../../assets/members/2022-2023/Shaik Nagurbasha.jpg";
 import Yathul_P_Deep_Rermal from "../../assets/members/2022-2023/Yathul P Deep Rermal.jpg";
-import Albert_T_Alex from "../../assets/members/2022-2023/Yathul P Deep Rermal.jpg";
-import P_E_Thanseehu_Rahman from "../../assets/members/2022-2023/Yathul P Deep Rermal.jpg";
-import Pranav_Prashant from "../../assets/members/2022-2023/Pranav Prashant.jpg";
+import Albert_T_Alex from "../../assets/members/2022-2023/Albert T Alex.jpg";
+import P_E_Thanseehu_Rahman from "../../assets/members/2022-2023/Thanseehu Rahman.jpg";
+import Pranav_Prashant from "../../assets/members/2022-2023/Pranav_Prashant.jpg";
 
-//Members
+//B21 Members
 import Junaid_Ashraf from "../../assets/members/2022-2023/Junaid Ashraf.jpg";
 import M_Bhanu_Prasad from "../../assets/members/2022-2023/M BHANU PRASAD.jpg";
 
-//B22
+//B22 Members
 import Adil from "../../assets/members/2023-2024/ADIL B220005EE.jpg";
 import Amarjith_T_K from "../../assets/members/2023-2024/AMARJITH T K.jpeg";
 import Anupoju_Shree_Vignesh from "../../assets/members/2023-2024/ANUPOJU SHREE VIGNESH.jpg";
@@ -103,13 +102,11 @@ const Members = () => {
 
   const toggleMembers = () => {
     setMembers(true);
-    // Scroll to the top of the page when switching to Members
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const toggleAlumni = () => {
     setMembers(false);
-    // Scroll to the top of the page when switching to Alumni
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -444,7 +441,7 @@ const Members = () => {
     {
       id: 15,
       name: "Albert T Alex",
-      position: "Marketing Heads",
+      position: "Marketing Head",
       image: Albert_T_Alex
     },
     {
@@ -623,7 +620,7 @@ const Members = () => {
     }
   ]
 
-  // Filter event cards based on the search term
+  // Filtering event cards based on the search term
   const filteredMembers = member.filter((m) =>
     m.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -660,6 +657,7 @@ const Members = () => {
                     alt="profile"
                     width={150}
                     height={150}
+                    loading='lazy'
                   />
                 </div>
                 <h2 className="member-name">{person.name}</h2>

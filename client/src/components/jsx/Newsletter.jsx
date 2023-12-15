@@ -58,11 +58,6 @@ export const Newsletter = () => {
                         'Subscribe'
                     )}
                 </button>
-                {/* {isSubscribed && (
-                    <div className="success-message-container">
-                        <p className="success-message">Thanks for Subscribing. We will keep you posted with the updates!</p>
-                    </div>
-                )} */}
             </div>
         </form>
     );

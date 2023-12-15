@@ -54,20 +54,17 @@
     }
 }
 
-/* Media query for small devices */
+
 @media (max-width: 768px) {
     .marquee {
         height: 80%;
-        /* Adjust the height as needed for small devices */
     }
 
     .marquee-logo {
         width: 80%;
-        /* Adjust the width as needed for small devices */
     }
 
     .marquee-content {
         font-size: 2px;
-        /* Adjust the font size as needed for small devices */
     }
 }

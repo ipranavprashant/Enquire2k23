@@ -1,16 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { css } from '@emotion/react';
 import { PacmanLoader } from 'react-spinners';
 import '../styles/Contact.css';
 import '../styles/Heading.css';
 import SuccessCard from './SuccessCard';
-
-const override = css`
-    display: flex;
-    text-align: center;
-    border-color: red;
-`;
 
 const RaiseADispute = () => {
     const [formData, setFormData] = useState({

@@ -1,10 +1,3 @@
-/* 
-		Details flips card to more info on the band
-		tickets button gradient move - mix blend mode
-		details hover = darker color
-		overflowing container
-*/
-
 :root {
     --blue: #4e73bc;
     --white: #fff;
@@ -13,7 +6,6 @@
     --blue-grey: #545b6d;
 }
 
-/* -- Event Card Layout --*/
 .event {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -186,6 +178,7 @@
     .time {
         max-width: 60%;
     }
+
     .event {
         margin-left: 1rem;
         margin-right: 1rem;

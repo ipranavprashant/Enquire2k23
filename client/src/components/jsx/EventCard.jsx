@@ -45,7 +45,7 @@ const EventCard = (props) => {
                 </address>
             </div>
             <div className="image-wrapper">
-                <img className="featured-image" src={imageUrl} alt={`${title} Band`} />
+                <img className="featured-image" src={imageUrl} alt={`${title} Band`} loading='lazy'/>
                 <div className="overlay"></div>
             </div>
             <div className="event-date date">
