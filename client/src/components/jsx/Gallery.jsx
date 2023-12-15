@@ -101,7 +101,6 @@ const InfiniteScrollImage = () => {
               onClick={() => handleImageClick(index)}
               className={isZoomed ? 'zoomed' : ''}
               onError={() => handleImageError(index)}
-              loading='lazy'
             />
           );
         })}

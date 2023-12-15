@@ -4,6 +4,7 @@ import { PacmanLoader } from 'react-spinners';
 import '../styles/Contact.css';
 import '../styles/Heading.css';
 import SuccessCard from './SuccessCard';
+import { BASE_URL, NITC_LOCATION } from '../utils/constants';
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ const ContactUs = () => {
         setIsLoading(true);
 
         try {
-            const response = await axios.post('https://enquire-backend.onrender.com/api/contact', formData);
+            const response = await axios.post(`${BASE_URL}/contact`, formData);
             console.log('Message sent successfully:', response.data);
             setIsSubmitted(true);
             setFormData({
@@ -59,7 +60,7 @@ const ContactUs = () => {
                     <div className="col2 column1 first">
                         <iframe
                             className="map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.1796100106694!2d75.93106097504986!3d11.321579088862295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba642fd50000001%3A0xbe8a77db953bda6c!2sNational%20Institute%20of%20Technology%2C%20Calicut!5e0!3m2!1sen!2sin!4v1702252973479!5m2!1sen!2sin"
+                            src={NITC_LOCATION}
                             title="club-location"
                             width="600"
                             height="450"

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../styles/EventCard.css';
 import { NavLink } from 'react-router-dom';
 
@@ -45,7 +44,7 @@ const EventCard = (props) => {
                 </address>
             </div>
             <div className="image-wrapper">
-                <img className="featured-image" src={imageUrl} alt={`${title} Band`} loading='lazy'/>
+                <img className="featured-image" src={imageUrl} alt={`${title} Band`}/>
                 <div className="overlay"></div>
             </div>
             <div className="event-date date">
@@ -70,19 +69,6 @@ const EventCard = (props) => {
             </div>
         </section>
     );
-};
-
-EventCard.propTypes = {
-    title: PropTypes.string.isRequired,
-    venueName: PropTypes.string.isRequired,
-    venueLink: PropTypes.string.isRequired,
-    streetAddress: PropTypes.string.isRequired,
-    locality: PropTypes.string.isRequired,
-    imageUrl: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
-    time: PropTypes.string.isRequired,
-    detailsLink: PropTypes.string.isRequired,
-    registerLink: PropTypes.string.isRequired,
 };
 
 export default EventCard;

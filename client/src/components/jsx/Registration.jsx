@@ -7,6 +7,8 @@ import '../styles/Registration.css';
 import SuccessCard from './SuccessCard';
 import EventNotActive from './EventNotActive';
 import NeedsNoRegistration from './NeedsNoRegistration';
+import { BASE_URL } from '../utils/constants';
+
 
 const Registration = () => {
     const { eventName } = useParams();
@@ -36,7 +38,7 @@ const Registration = () => {
                 eventname: eventName, // Include the eventname in the request payload
             };
 
-            const response = await axios.post('https://enquire-backend.onrender.com/api/registration', registrationData);
+            const response = await axios.post(`${BASE_URL}/registration`, registrationData);
             console.log(response.data);
 
             setRegistrationSuccess(true);

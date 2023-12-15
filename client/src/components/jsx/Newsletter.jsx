@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { FaReact } from 'react-icons/fa';
 import '../styles/Newsletter.css';
+import { BASE_URL } from '../utils/constants';
+
 
 export const Newsletter = () => {
     const [email, setEmail] = useState('');
@@ -17,7 +19,7 @@ export const Newsletter = () => {
         setIsLoading(true);
 
         try {
-            await axios.post('https://enquire-backend.onrender.com/api/newsletter', { email });
+            await axios.post(`${BASE_URL}/newsletter`, { email });
             setIsSubscribed(true);
             setEmail('');
         } catch (error) {
