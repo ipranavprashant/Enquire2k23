@@ -1,16 +1,16 @@
-.vertical-gap{
-    margin-top: 10rem;
+.vertical-gap {
+  margin-top: 10rem;
 }
 
 .devicer {
-    width: 20em;
-    display: block;
-    height: 5px;
-    background-color: #e91e63;
-    margin: 60px auto 0;
-  }
+  width: 20em;
+  display: block;
+  height: 5px;
+  background-color: #e91e63;
+  margin: 60px auto 0;
+}
 
-  .to-centre{
-    display: flex;
-    justify-content: center;
-  }
+.to-centre {
+  display: flex;
+  justify-content: center;
+}

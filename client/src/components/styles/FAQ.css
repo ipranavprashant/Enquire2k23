@@ -1,79 +1,79 @@
 .content {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
 }
 
 details {
-    max-width: 960px;
-    margin: 1rem auto;
-    background-color: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 .25rem 1rem rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin: 1rem auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 details:not([open]) {
-    animation-name: fold-in;
-    animation-duration: .2s;
+  animation-name: fold-in;
+  animation-duration: 0.2s;
 }
 
 details summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 600;
-    padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 1.5rem;
 }
 
 /* Disable browser default marker */
 details summary::-webkit-details-marker,
 details summary::marker {
-    content: "";
-    display: none;
+  content: "";
+  display: none;
 }
 
 /* Custom marker */
 details summary::after {
-    content: "+";
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1;
-    margin-right: 1rem;
-    cursor: pointer;
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-right: 1rem;
+  cursor: pointer;
 }
 
 .details .content {
-    padding: 0 1.5rem 1.5rem;
+  padding: 0 1.5rem 1.5rem;
 }
 
 /* Collapsible OPEN */
 details[open] summary::after {
-    content: "−";
+  content: "−";
 }
 
 details[open] .content {
-    animation-name: fold-out;
-    animation-duration: .2s;
+  animation-name: fold-out;
+  animation-duration: 0.2s;
 }
 
 @keyframes fold-out {
-    0% {
-        opacity: 0;
-        margin-top: -1rem;
-    }
+  0% {
+    opacity: 0;
+    margin-top: -1rem;
+  }
 
-    100% {
-        opacity: 1;
-        margin-top: 0;
-    }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 
 @keyframes fold-in {
-    0% {
-        padding-bottom: 1rem;
-    }
+  0% {
+    padding-bottom: 1rem;
+  }
 
-    100% {
-        padding-bottom: 0;
-    }
+  100% {
+    padding-bottom: 0;
+  }
 }

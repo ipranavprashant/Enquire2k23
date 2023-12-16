@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 h1 {
   position: relative;
@@ -57,7 +57,7 @@ h1 em {
   background-color: #b80000;
 }
 
-@media (max-width : 767px) {
+@media (max-width: 767px) {
   h1 {
     font-size: 30px;
   }

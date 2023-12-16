@@ -41,246 +41,246 @@ import Subhash_Madhav from "../../assets/members/2021-2022/Subhash Madhav.png";
 import Suvishal_Kumar_Secretary from "../../assets/members/2021-2022/Suvishal Kumar__Secretary.jpg";
 
 const alumniData = [
-    {
-        id: 1,
-        name: "Abhijith B Mohan",
-        position: "Alumni",
-        image: AbhijithB_Mohan_Alst_Secretary
-    },
-    {
-        id: 2,
-        name: "Abhiram K R",
-        position: "Alumni",
-        image: Abhiram_K_R
-    },
-    {
-        id: 3,
-        name: "Abhishek Gautam",
-        position: "Alumni",
-        image: Abhishek_Gautam
-    },
-    {
-        id: 4,
-        name: "Abin Gigo Joseph",
-        position: "Alumni",
-        image: Abin_Gigo_Joseph_Treasurer
-    },
-    {
-        id: 5,
-        name: "Abiraj P Y",
-        position: "Alumni",
-        image: Abiraj_P_Y_Design_Head
-    },
-    {
-        id: 6,
-        name: "Adithya Ankam",
-        position: "Alumni",
-        image: Adithya_Ankam
-    },
-    {
-        id: 7,
-        name: "Akhil R Kurup",
-        position: "Alumni",
-        image: Akhil_R_Kurup
-    },
-    {
-        id: 8,
-        name: "Aleena Ann George",
-        position: "Alumni",
-        image: Aleena_Ann_George_Marketing_Head
-    },
-    {
-        id: 9,
-        name: "Asit Kumar",
-        position: "Alumni",
-        image: Asit_Kumar
-    },
-    {
-        id: 10,
-        name: "Bandi Kapil Kaushik",
-        position: "Alumni",
-        image: Bandi_Kapil_Kaushik
-    },
-    {
-        id: 11,
-        name: "Bhavin P V Social",
-        position: "Alumni",
-        image: Bhavin_P_V_Social_Media_Head
-    },
-    {
-        id: 12,
-        name: "Chinthalapudi Hari Prasad",
-        position: "Alumni",
-        image: Chinthalapudi_Hari_Prasad
-    },
-    {
-        id: 13,
-        name: "Chitturi Sakshvith Sanjeev",
-        position: "Alumni",
-        image: Chitturi_Sakshvith_Sanjeev
-    },
-    {
-        id: 14,
-        name: "Deviprasad V R",
-        position: "Alumni",
-        image: Deviprasad_V_R
-    },
-    {
-        id: 15,
-        name: "Emily Eldose",
-        position: "Alumni",
-        image: Emily_Eldose
-    },
-    {
-        id: 16,
-        name: "Gautham Krishna",
-        position: "Alumni",
-        image: Gautham_Krishna_Joint_Secretary
-    },
-    {
-        id: 17,
-        name: "Gayathri",
-        position: "Alumni",
-        image: Gayathri
-    },
-    {
-        id: 18,
-        name: "Goru Harshitha",
-        position: "Alumni",
-        image: Goru_Harshitha_Content_Head
-    },
-    {
-        id: 19,
-        name: "Gunda Chandana",
-        position: "Alumni",
-        image: Gunda_Chandana_Treasurer
-    },
-    {
-        id: 20,
-        name: "Harinarayanan K",
-        position: "Alumni",
-        image: Harinarayanan_K
-    },
-    {
-        id: 21,
-        name: "Ivin Issac Georgi",
-        position: "Alumni",
-        image: Ivin_Issac_Georgi
-    },
-    {
-        id: 22,
-        name: "Jhansyharshitha Vankayalapati",
-        position: "Alumni",
-        image: Jhansyharshitha_Vankayalapati_Marketing_Head
-    },
-    {
-        id: 23,
-        name: "Kancharakuntla Reethu Reddy",
-        position: "Alumni",
-        image: Kancharakuntla_Reethu_Reddy
-    },
-    {
-        id: 24,
-        name: "Madhav Prabhu",
-        position: "Alumni",
-        image: Madhav_Prabhu
-    },
-    {
-        id: 25,
-        name: "Neelima M",
-        position: "Alumni",
-        image: Neelima_M_Asst_Secretary
-    },
-    {
-        id: 26,
-        name: "Nikhil Sreeraj",
-        position: "Alumni",
-        image: Nikhil_Sreeraj
-    },
-    {
-        id: 27,
-        name: "Niranjan Manoj",
-        position: "Alumni",
-        image: Niranjan_Manoj
-    },
-    {
-        id: 28,
-        name: "Panasa Teja",
-        position: "Alumni",
-        image: Panasa_Teja_Technical_Head
-    },
-    {
-        id: 29,
-        name: "Parvathi Mohan",
-        position: "Alumni",
-        image: Parvathi_Mohan_PRC_Head
-    },
-    {
-        id: 30,
-        name: "Peddireddy HemaVarsha",
-        position: "Alumni",
-        image: Peddireddy_HemaVarsha
-    },
-    {
-        id: 31,
-        name: "Ritu Anne Koshy",
-        position: "Alumni",
-        image: Ritu_Anne_Koshy
-    },
-    {
-        id: 32,
-        name: "Ruben Sinu",
-        position: "Alumni",
-        image: Ruben_Sinu
-    },
-    {
-        id: 33,
-        name: "S Jaivardhan",
-        position: "Alumni",
-        image: S_Jaivardhan
-    },
-    {
-        id: 34,
-        name: "Satyam Gupta",
-        position: "Alumni",
-        image: Satyam_Gupta
-    },
-    {
-        id: 35,
-        name: "Shijin P P",
-        position: "Alumni",
-        image: Shijin_P_P
-    },
-    {
-        id: 36,
-        name: "Shrishti Singh",
-        position: "Alumni",
-        image: Shrishti_Singh
-    },
-    {
-        id: 37,
-        name: "Sidharth Deepesh",
-        position: "Alumni",
-        image: Sidharth_Deepesh
-    },
-    {
-        id: 38,
-        name: "Sinjitha",
-        position: "Alumni",
-        image: Sinjitha
-    },
-    {
-        id: 39,
-        name: "Subhash Madhav",
-        position: "Alumni",
-        image: Subhash_Madhav
-    },
-    {
-        id: 40,
-        name: "Suvishal Kumar",
-        position: "Alumni",
-        image: Suvishal_Kumar_Secretary
-    }
-]
+  {
+    id: 1,
+    name: "Abhijith B Mohan",
+    position: "Alumni",
+    image: AbhijithB_Mohan_Alst_Secretary,
+  },
+  {
+    id: 2,
+    name: "Abhiram K R",
+    position: "Alumni",
+    image: Abhiram_K_R,
+  },
+  {
+    id: 3,
+    name: "Abhishek Gautam",
+    position: "Alumni",
+    image: Abhishek_Gautam,
+  },
+  {
+    id: 4,
+    name: "Abin Gigo Joseph",
+    position: "Alumni",
+    image: Abin_Gigo_Joseph_Treasurer,
+  },
+  {
+    id: 5,
+    name: "Abiraj P Y",
+    position: "Alumni",
+    image: Abiraj_P_Y_Design_Head,
+  },
+  {
+    id: 6,
+    name: "Adithya Ankam",
+    position: "Alumni",
+    image: Adithya_Ankam,
+  },
+  {
+    id: 7,
+    name: "Akhil R Kurup",
+    position: "Alumni",
+    image: Akhil_R_Kurup,
+  },
+  {
+    id: 8,
+    name: "Aleena Ann George",
+    position: "Alumni",
+    image: Aleena_Ann_George_Marketing_Head,
+  },
+  {
+    id: 9,
+    name: "Asit Kumar",
+    position: "Alumni",
+    image: Asit_Kumar,
+  },
+  {
+    id: 10,
+    name: "Bandi Kapil Kaushik",
+    position: "Alumni",
+    image: Bandi_Kapil_Kaushik,
+  },
+  {
+    id: 11,
+    name: "Bhavin P V Social",
+    position: "Alumni",
+    image: Bhavin_P_V_Social_Media_Head,
+  },
+  {
+    id: 12,
+    name: "Chinthalapudi Hari Prasad",
+    position: "Alumni",
+    image: Chinthalapudi_Hari_Prasad,
+  },
+  {
+    id: 13,
+    name: "Chitturi Sakshvith Sanjeev",
+    position: "Alumni",
+    image: Chitturi_Sakshvith_Sanjeev,
+  },
+  {
+    id: 14,
+    name: "Deviprasad V R",
+    position: "Alumni",
+    image: Deviprasad_V_R,
+  },
+  {
+    id: 15,
+    name: "Emily Eldose",
+    position: "Alumni",
+    image: Emily_Eldose,
+  },
+  {
+    id: 16,
+    name: "Gautham Krishna",
+    position: "Alumni",
+    image: Gautham_Krishna_Joint_Secretary,
+  },
+  {
+    id: 17,
+    name: "Gayathri",
+    position: "Alumni",
+    image: Gayathri,
+  },
+  {
+    id: 18,
+    name: "Goru Harshitha",
+    position: "Alumni",
+    image: Goru_Harshitha_Content_Head,
+  },
+  {
+    id: 19,
+    name: "Gunda Chandana",
+    position: "Alumni",
+    image: Gunda_Chandana_Treasurer,
+  },
+  {
+    id: 20,
+    name: "Harinarayanan K",
+    position: "Alumni",
+    image: Harinarayanan_K,
+  },
+  {
+    id: 21,
+    name: "Ivin Issac Georgi",
+    position: "Alumni",
+    image: Ivin_Issac_Georgi,
+  },
+  {
+    id: 22,
+    name: "Jhansyharshitha Vankayalapati",
+    position: "Alumni",
+    image: Jhansyharshitha_Vankayalapati_Marketing_Head,
+  },
+  {
+    id: 23,
+    name: "Kancharakuntla Reethu Reddy",
+    position: "Alumni",
+    image: Kancharakuntla_Reethu_Reddy,
+  },
+  {
+    id: 24,
+    name: "Madhav Prabhu",
+    position: "Alumni",
+    image: Madhav_Prabhu,
+  },
+  {
+    id: 25,
+    name: "Neelima M",
+    position: "Alumni",
+    image: Neelima_M_Asst_Secretary,
+  },
+  {
+    id: 26,
+    name: "Nikhil Sreeraj",
+    position: "Alumni",
+    image: Nikhil_Sreeraj,
+  },
+  {
+    id: 27,
+    name: "Niranjan Manoj",
+    position: "Alumni",
+    image: Niranjan_Manoj,
+  },
+  {
+    id: 28,
+    name: "Panasa Teja",
+    position: "Alumni",
+    image: Panasa_Teja_Technical_Head,
+  },
+  {
+    id: 29,
+    name: "Parvathi Mohan",
+    position: "Alumni",
+    image: Parvathi_Mohan_PRC_Head,
+  },
+  {
+    id: 30,
+    name: "Peddireddy HemaVarsha",
+    position: "Alumni",
+    image: Peddireddy_HemaVarsha,
+  },
+  {
+    id: 31,
+    name: "Ritu Anne Koshy",
+    position: "Alumni",
+    image: Ritu_Anne_Koshy,
+  },
+  {
+    id: 32,
+    name: "Ruben Sinu",
+    position: "Alumni",
+    image: Ruben_Sinu,
+  },
+  {
+    id: 33,
+    name: "S Jaivardhan",
+    position: "Alumni",
+    image: S_Jaivardhan,
+  },
+  {
+    id: 34,
+    name: "Satyam Gupta",
+    position: "Alumni",
+    image: Satyam_Gupta,
+  },
+  {
+    id: 35,
+    name: "Shijin P P",
+    position: "Alumni",
+    image: Shijin_P_P,
+  },
+  {
+    id: 36,
+    name: "Shrishti Singh",
+    position: "Alumni",
+    image: Shrishti_Singh,
+  },
+  {
+    id: 37,
+    name: "Sidharth Deepesh",
+    position: "Alumni",
+    image: Sidharth_Deepesh,
+  },
+  {
+    id: 38,
+    name: "Sinjitha",
+    position: "Alumni",
+    image: Sinjitha,
+  },
+  {
+    id: 39,
+    name: "Subhash Madhav",
+    position: "Alumni",
+    image: Subhash_Madhav,
+  },
+  {
+    id: 40,
+    name: "Suvishal Kumar",
+    position: "Alumni",
+    image: Suvishal_Kumar_Secretary,
+  },
+];
 
-export default alumniData
+export default alumniData;

@@ -1,28 +1,27 @@
-import React, { useState } from 'react';
-import membersData from '../utils/memberData'
-import alumniData from '../utils/alumniData';
-import '../styles/Members.css';
-import '../styles/Heading.css'
+import React, { useState } from "react";
+import membersData from "../utils/memberData";
+import alumniData from "../utils/alumniData";
+import "../styles/Members.css";
+import "../styles/Heading.css";
 
 const Members = () => {
   const [members, setMembers] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   const toggleMembers = () => {
     setMembers(true);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const toggleAlumni = () => {
     setMembers(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // Filtering event cards based on the search term
   const filteredMembers = membersData.filter((m) =>
     m.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
 
   const filteredAlumni = alumniData.filter((a) =>
     a.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -33,11 +32,11 @@ const Members = () => {
   // );
 
   const filteredPeople = members ? filteredMembers : filteredAlumni;
-  const headingText = members ? 'Members' : 'Alumni';
+  const headingText = members ? "Members" : "Alumni";
 
   return (
     <>
-      <div className='beautify-heading'>
+      <div className="beautify-heading">
         <h1>{headingText}</h1>
       </div>
       <input
@@ -67,19 +66,20 @@ const Members = () => {
             ))
           ) : (
             <p className="no-members-message">
-              Zzz... No members found. Check back later or try a different search.
+              Zzz... No members found. Check back later or try a different
+              search.
             </p>
           )}
         </div>
         <div className="people-nav">
           <button
-            className={`nav-button ${members ? 'nav-active' : ''}`}
+            className={`nav-button ${members ? "nav-active" : ""}`}
             onClick={toggleMembers}
           >
             Members
           </button>
           <button
-            className={`nav-button ${!members ? 'nav-active' : ''}`}
+            className={`nav-button ${!members ? "nav-active" : ""}`}
             onClick={toggleAlumni}
           >
             Alumni

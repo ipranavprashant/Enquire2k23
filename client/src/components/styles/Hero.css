@@ -1,52 +1,52 @@
 .home-hero {
-    background-image: url(../../assets/hero.png);
-    padding: 6em 0;
-    color: #ffffff;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh;
+  background-image: url(../../assets/hero.png);
+  padding: 6em 0;
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
 }
 
 .button {
-    display: inline-block;
-    font-size: 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 20px;
-    padding: .4em 1em;
-    cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 0.4em 1em;
+  cursor: pointer;
 }
 
 .button-accent {
-    color: #e91e63;
-    border-color: #e91e63;
+  color: #e91e63;
+  border-color: #e91e63;
 }
 
 .button-accent:hover,
 .button-accent:focus {
-    background: #e91e63;
-    color: #121639;
+  background: #e91e63;
+  color: #121639;
 }
 
 .title-hero p {
-    display: block;
-    color: #121639;
+  display: block;
+  color: #121639;
 }
 
-@media(max-width: 767px) {
-    .home-hero {
-        background-image: url(../../assets/hero-mobile.jpg);
-        min-height: 85vh;
-    }
+@media (max-width: 767px) {
+  .home-hero {
+    background-image: url(../../assets/hero-mobile.jpg);
+    min-height: 85vh;
+  }
 
-    .button {
-        font-size: 1rem;
-        padding: 0.5em 1em;
-    }
+  .button {
+    font-size: 1rem;
+    padding: 0.5em 1em;
+  }
 }

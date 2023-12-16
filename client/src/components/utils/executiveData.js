@@ -18,108 +18,108 @@ import P_E_Thanseehu_Rahman from "../../assets/members/2022-2023/Thanseehu Rahma
 import Pranav_Prashant from "../../assets/members/2022-2023/Pranav_Prashant.jpg";
 
 const executiveData = [
-    {
-        id: 1,
-        name: "Linda Mary Zacharia",
-        position: "Secretary",
-        image: Linda_Mary_Zacharia
-    },
-    {
-        id: 2,
-        name: "Harikrishnan N",
-        position: "Quizzing Hometeam Captain",
-        image: Harikrishnan_N
-    },
-    {
-        id: 3,
-        name: "Aabid Mohamed A",
-        position: "Joint Secretary",
-        image: Aabid_Mohamed
-    },
-    {
-        id: 4,
-        name: "Lakshmipriya A",
-        position: "Assistant Secretary",
-        image: Lakshmipriya_S
-    },
-    {
-        id: 5,
-        name: "Tilottama Basu",
-        position: "Assistant Secretary",
-        image: Tilottama_Basu
-    },
-    {
-        id: 6,
-        name: "S Sudhagar",
-        position: "Treasurer",
-        image: S_Sudhagar
-    },
-    {
-        id: 7,
-        name: "Akash E K",
-        position: "Treasurer",
-        image: Akash_EK
-    },
-    {
-        id: 8,
-        name: "Aswath P R",
-        position: "Event Coordinator",
-        image: Aswath_PR
-    },
-    {
-        id: 9,
-        name: "Joel George John",
-        position: "Event Coordinator",
-        image: Joel_George_John
-    },
-    {
-        id: 10,
-        name: "K Venkat Bharath",
-        position: "Content Head",
-        image: K_Venkat_Bharath
-    },
-    {
-        id: 11,
-        name: "Ananthu Krishnan U",
-        position: "Design Head",
-        image: Ananthu_Krishnan
-    },
-    {
-        id: 12,
-        name: "Aswin S",
-        position: "Media Head",
-        image: Aswin_Sanilkumar
-    },
-    {
-        id: 13,
-        name: "Shaik Nagur Basha",
-        position: "PRC Head",
-        image: Shaik_Nagurbasha
-    },
-    {
-        id: 14,
-        name: "Yathul P Deep",
-        position: "PRC Head",
-        image: Yathul_P_Deep_Rermal
-    },
-    {
-        id: 15,
-        name: "Albert T Alex",
-        position: "Marketing Head",
-        image: Albert_T_Alex
-    },
-    {
-        id: 16,
-        name: "P E Thanseehu Rahman",
-        position: "Marketing Head",
-        image: P_E_Thanseehu_Rahman
-    },
-    {
-        id: 17,
-        name: "Pranav Prashant",
-        position: "Tech Head",
-        image: Pranav_Prashant
-    }
-]
+  {
+    id: 1,
+    name: "Linda Mary Zacharia",
+    position: "Secretary",
+    image: Linda_Mary_Zacharia,
+  },
+  {
+    id: 2,
+    name: "Harikrishnan N",
+    position: "Quizzing Hometeam Captain",
+    image: Harikrishnan_N,
+  },
+  {
+    id: 3,
+    name: "Aabid Mohamed A",
+    position: "Joint Secretary",
+    image: Aabid_Mohamed,
+  },
+  {
+    id: 4,
+    name: "Lakshmipriya A",
+    position: "Assistant Secretary",
+    image: Lakshmipriya_S,
+  },
+  {
+    id: 5,
+    name: "Tilottama Basu",
+    position: "Assistant Secretary",
+    image: Tilottama_Basu,
+  },
+  {
+    id: 6,
+    name: "S Sudhagar",
+    position: "Treasurer",
+    image: S_Sudhagar,
+  },
+  {
+    id: 7,
+    name: "Akash E K",
+    position: "Treasurer",
+    image: Akash_EK,
+  },
+  {
+    id: 8,
+    name: "Aswath P R",
+    position: "Event Coordinator",
+    image: Aswath_PR,
+  },
+  {
+    id: 9,
+    name: "Joel George John",
+    position: "Event Coordinator",
+    image: Joel_George_John,
+  },
+  {
+    id: 10,
+    name: "K Venkat Bharath",
+    position: "Content Head",
+    image: K_Venkat_Bharath,
+  },
+  {
+    id: 11,
+    name: "Ananthu Krishnan U",
+    position: "Design Head",
+    image: Ananthu_Krishnan,
+  },
+  {
+    id: 12,
+    name: "Aswin S",
+    position: "Media Head",
+    image: Aswin_Sanilkumar,
+  },
+  {
+    id: 13,
+    name: "Shaik Nagur Basha",
+    position: "PRC Head",
+    image: Shaik_Nagurbasha,
+  },
+  {
+    id: 14,
+    name: "Yathul P Deep",
+    position: "PRC Head",
+    image: Yathul_P_Deep_Rermal,
+  },
+  {
+    id: 15,
+    name: "Albert T Alex",
+    position: "Marketing Head",
+    image: Albert_T_Alex,
+  },
+  {
+    id: 16,
+    name: "P E Thanseehu Rahman",
+    position: "Marketing Head",
+    image: P_E_Thanseehu_Rahman,
+  },
+  {
+    id: 17,
+    name: "Pranav Prashant",
+    position: "Tech Head",
+    image: Pranav_Prashant,
+  },
+];
 
-export default executiveData
+export default executiveData;

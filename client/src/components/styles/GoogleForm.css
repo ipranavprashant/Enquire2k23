@@ -1,13 +1,13 @@
 .container-googleform {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  min-height: 100vh;
 }
 
 @media (max-width: 767px) {
-    .container-googleform {
-        min-height: 80vh;
-    }
+  .container-googleform {
+    min-height: 80vh;
+  }
 }

@@ -1,108 +1,106 @@
 .container-registrationform {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background: white;
-    -webkit-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
-    -moz-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
-    box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 
 .container-registrationform input,
 .container-registrationform select {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f7f7f7;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 .container-registrationform select {
-    width: 100%;
+  width: 100%;
 }
 
 .container-registrationform input[type="tel"] {
-    margin-right: 15px;
-    width: calc(100% - 18% - 15px);
+  margin-right: 15px;
+  width: calc(100% - 18% - 15px);
 }
 
 .container-registrationform input:focus,
 .container-registrationform select:focus {
-    background-color: #ddd;
-    outline: none;
+  background-color: #ddd;
+  outline: none;
 }
 
 .container-registrationform button {
-    background-color: #0eb7f4;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    font-size: 16px;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    border-radius: 10px;
+  background-color: #0eb7f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 16px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  border-radius: 10px;
 }
 
 .container-registrationform button:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .phone-code {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 .phone-number {
-    margin-left: 1rem;
-    width: 40rem;
+  margin-left: 1rem;
+  width: 40rem;
 }
 
 .phone-inputs {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .success-message {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  text-align: center;
 }
 
 .loading-message {
-    min-height: 40vh;
-    margin-bottom: 2rem;
-    text-align: center;
+  min-height: 40vh;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .pacman {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 760px) {
+  .container-registrationform input,
+  .container-registrationform select,
+  .container-registrationform button {
+    width: 100%;
+  }
 
-    .container-registrationform input,
-    .container-registrationform select,
-    .container-registrationform button {
-        width: 100%;
-    }
+  .phone-code {
+    max-width: 80px;
+  }
 
-    .phone-code {
-        max-width: 80px;
-    }
-
-    .phone-number {
-        width: 15rem;
-
-    }
+  .phone-number {
+    width: 15rem;
+  }
 }

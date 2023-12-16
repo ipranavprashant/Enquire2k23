@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react';
-import '../styles/Heading.css';
-import styled from 'styled-components';
+import React, { useState, useEffect, useRef } from "react";
+import "../styles/Heading.css";
+import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 20px;
-  minHeight:'100vh'
+  minheight: "100vh";
 `;
 
 const Image = styled.img`
@@ -24,7 +24,7 @@ const Image = styled.img`
   }
 
   &.zoomed {
-    transform: scale(1.0);
+    transform: scale(1);
     max-width: 80%;
     max-height: 80%;
     position: fixed;
@@ -69,15 +69,18 @@ const InfiniteScrollImage = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (containerRef.current && !containerRef.current.contains(event.target)) {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target)
+      ) {
         setZoomedIndex(null);
       }
     };
 
-    window.addEventListener('click', handleClickOutside);
+    window.addEventListener("click", handleClickOutside);
 
     return () => {
-      window.removeEventListener('click', handleClickOutside);
+      window.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
@@ -88,7 +91,15 @@ const InfiniteScrollImage = () => {
       </div>
       <Container ref={containerRef}>
         {images.map((image, index) => {
-          if (index === 25 || index === 46 || index === 63 || index === 65 || index === 66 || index === 67 || index === 68) {
+          if (
+            index === 25 ||
+            index === 46 ||
+            index === 63 ||
+            index === 65 ||
+            index === 66 ||
+            index === 67 ||
+            index === 68
+          ) {
             return null;
           }
 
@@ -99,7 +110,7 @@ const InfiniteScrollImage = () => {
               src={`${process.env.PUBLIC_URL}/assets/gallery/${image}`}
               alt={`Image ${index}`}
               onClick={() => handleImageClick(index)}
-              className={isZoomed ? 'zoomed' : ''}
+              className={isZoomed ? "zoomed" : ""}
               onError={() => handleImageError(index)}
             />
           );

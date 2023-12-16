@@ -2,28 +2,30 @@ if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 
-const express = require('express');
-const cors = require('cors');
-const requireAuth = require('./middleware/requireAuth');
-const cookieParser = require('cookie-parser');
+const express = require("express");
+const cors = require("cors");
+const requireAuth = require("./middleware/requireAuth");
+const cookieParser = require("cookie-parser");
 
-const connectToMongo = require('./config/connectToMongo');
-const contactController = require('./routes/contactController');
-const disputeController = require('./routes/disputeController');
-const sponsorshipContoller = require('./routes/sponsorshipContoller');
-const registrationController = require('./routes/registrationController');
-const newsletterController = require('./routes/newsletterController');
-const adminController = require('./routes/adminController');
+const connectToMongo = require("./config/connectToMongo");
+const contactController = require("./routes/contactController");
+const disputeController = require("./routes/disputeController");
+const sponsorshipContoller = require("./routes/sponsorshipContoller");
+const registrationController = require("./routes/registrationController");
+const newsletterController = require("./routes/newsletterController");
+const adminController = require("./routes/adminController");
 
 const app = express();
 
-app.use(express.json({ limit: '500mb' }));
+app.use(express.json({ limit: "500mb" }));
 app.use(cookieParser());
 
-app.use(cors({
-  origin: true,
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: true,
+    credentials: true,
+  })
+);
 
 connectToMongo();
 
