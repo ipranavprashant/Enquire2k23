@@ -8,7 +8,7 @@ const Marquee = () => {
     <div className="marquee">
       <section className="marquee-content">
         {logos.map((company, index) => (
-          <a key={index} href="#" className="marquee-block">
+          <a href="https://pranavprashant.in" key={index} className="marquee-block">
             <img
               className="marquee-logo"
               src={`https://cdn.shopify.com/s/files/1/0789/1333/files/${company}.svg?v=1593719066`}
@@ -19,7 +19,7 @@ const Marquee = () => {
       </section>
       <section className="marquee-content">
         {logos.map((company, index) => (
-          <a key={index} href="#" className="marquee-block">
+          <a href="https://pranavprashant.in" key={index} className="marquee-block">
             <img
               className="marquee-logo"
               src={`https://cdn.shopify.com/s/files/1/0789/1333/files/${company}.svg?v=1593719066`}
