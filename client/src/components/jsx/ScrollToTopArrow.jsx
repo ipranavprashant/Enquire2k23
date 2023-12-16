@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
 import '../styles/ScrollToTopArrow.css';
 
+
 const ScrollToTopArrow = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [scrollDirection, setScrollDirection] = useState('up');

@@ -26,6 +26,7 @@ app.post("/api/contact", contactController.createContact);
 app.post("/api/raise-a-dispute", disputeController.createDispute);
 app.post("/api/sponsorship", sponsorshipContoller.createSponsorship);
 app.post("/api/registration", registrationController.createRegistration);
+app.get("/api/show-registrations", registrationController.fetchRegistration);
 app.post("/api/newsletter", newsletterController.createNewsletter);
 
 app.listen(process.env.PORT);

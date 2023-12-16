@@ -31,6 +31,18 @@ const createRegistration = async (req, res) => {
     }
 }
 
+
+const fetchRegistration = async (req, res) => {
+    try {
+        const registration = await Registration.find();
+        res.json({ gotRegistration: registration });
+    } catch (error) {
+        console.error("Error during fetchItems:", error);
+        res.status(500).send("Internal Server Error");
+    }
+}
+
 module.exports = {
-    createRegistration: createRegistration
+    createRegistration: createRegistration,
+    fetchRegistration: fetchRegistration
 }

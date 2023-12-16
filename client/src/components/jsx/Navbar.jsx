@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
 import EnquireLogo from '../../assets/EnquireLogo.jpeg';
 
+
 const Navbar = () => {
     const [isExpanded, setIsExpanded] = useState(false);
     const [scrolling, setScrolling] = useState(false);
