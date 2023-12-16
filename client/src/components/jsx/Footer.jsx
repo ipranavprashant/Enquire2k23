@@ -24,7 +24,8 @@ const Footer = () => {
                             <ul>
                                 <li><NavLink to="/about" className="nav__link" onClick={scrollToTop}>about us</NavLink></li>
                                 <li><NavLink to="/gallery" className="nav__link" onClick={scrollToTop}>Gallery</NavLink></li>
-                                <li><NavLink to="/privacypolicy" className="nav__link" onClick={scrollToTop}>privacy policy</NavLink></li>
+                                <li><NavLink to="/admin" className="nav__link" onClick={scrollToTop}>Admin</NavLink></li>
+                                {/* <li><NavLink to="/privacypolicy" className="nav__link" onClick={scrollToTop}>privacy policy</NavLink></li> */}
                                 <li><NavLink to="/members" className="nav__link" onClick={scrollToTop}>our people</NavLink></li>
                             </ul>
                         </div>
@@ -32,7 +33,7 @@ const Footer = () => {
                             <h4>get help</h4>
                             <ul>
                                 <li><NavLink to="/faq" className="nav__link" onClick={scrollToTop}>FAQ</NavLink></li>
-                                <li><NavLink to="/admin" className="nav__link" onClick={scrollToTop}>Admin</NavLink></li>
+                                <li><NavLink to="/archives" className="nav__link" onClick={scrollToTop}>Archives</NavLink></li>
                                 <li><NavLink to="/raise-a-dispute" className="nav__link" onClick={scrollToTop}>Raise a Dispute</NavLink></li>
                                 <li><NavLink to="/sponsorship" className="nav__link" onClick={scrollToTop}>Sponsorship</NavLink></li>
                             </ul>
