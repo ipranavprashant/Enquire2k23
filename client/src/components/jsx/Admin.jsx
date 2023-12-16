@@ -15,7 +15,7 @@ const Admin = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [isLoading, setIsLoading] = useState(false); // New state variable
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -27,7 +27,7 @@ const Admin = () => {
 
     const handleSignIn = async (e) => {
         e.preventDefault();
-        setIsLoading(true); // Set loading to true on sign-in attempt
+        setIsLoading(true);
         const data = {
             email: email,
             password: password
@@ -44,14 +44,13 @@ const Admin = () => {
             } else {
                 const token = res.data.token;
                 localStorage.setItem('authToken', token);
-                alert("Successfully signed in!");
-                navigate("/admin/registrations");
+                navigate("/admin");
             }
         } catch (error) {
             console.error("Error during login:", error);
             alert("Wrong Credentials. Please try again.");
         } finally {
-            setIsLoading(false); // Set loading to false regardless of the sign-in result
+            setIsLoading(false);
         }
     };
 

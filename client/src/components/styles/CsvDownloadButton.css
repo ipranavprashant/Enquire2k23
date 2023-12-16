@@ -6,11 +6,6 @@
     margin-top: 20px;
     min-height: 50vh;
     transition: transform 0.3s ease;
-    /* Add a smooth transition effect */
-}
-
-.csv-download-container:hover {
-    /* Increase the scale factor as needed */
 }
 
 .data-card-container {
@@ -20,7 +15,7 @@
     align-items: center;
 }
 
-.data-card:hover{
+.data-card:hover {
     transform: scale(1.03);
 
 }

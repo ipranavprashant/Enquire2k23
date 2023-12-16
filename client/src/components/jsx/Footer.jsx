@@ -32,7 +32,7 @@ const Footer = () => {
                             <h4>get help</h4>
                             <ul>
                                 <li><NavLink to="/faq" className="nav__link" onClick={scrollToTop}>FAQ</NavLink></li>
-                                <li><NavLink to="/archives" className="nav__link" onClick={scrollToTop}>Archives</NavLink></li>
+                                <li><NavLink to="/admin" className="nav__link" onClick={scrollToTop}>Admin</NavLink></li>
                                 <li><NavLink to="/raise-a-dispute" className="nav__link" onClick={scrollToTop}>Raise a Dispute</NavLink></li>
                                 <li><NavLink to="/sponsorship" className="nav__link" onClick={scrollToTop}>Sponsorship</NavLink></li>
                             </ul>

@@ -2,11 +2,23 @@ import React, { useState, useEffect } from 'react';
 import { BASE_URL } from '../utils/constants';
 import '../styles/CsvDownloadButton.css';
 import '../styles/Heading.css';
+import { useNavigate } from 'react-router-dom';
+import Admin from './Admin';
 
 const CsvDownloadButton = () => {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
+    const isAuthenticated = localStorage.getItem('authToken');
+
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        localStorage.removeItem('authToken');
+        navigate("/admin");
+        window.location.reload(true);
+    };
+
 
     const fetchDataFromBackend = async () => {
         try {
@@ -48,6 +60,8 @@ const CsvDownloadButton = () => {
         fetchDataFromBackend();
     }, []);
 
+    if (!isAuthenticated)
+        return <Admin />
     return (
         <div>
             <div className="beautify-heading">
@@ -56,6 +70,9 @@ const CsvDownloadButton = () => {
             <div className='to-align'>
                 <button className="button  button-accent" onClick={downloadCSV} disabled={isLoading || data.length === 0}>
                     Download CSV
+                </button>&nbsp;&nbsp;
+                <button className="button  button-accent" onClick={handleLogout} disabled={isLoading || data.length === 0}>
+                    Logout
                 </button>
             </div>
             <div className="csv-download-container">
@@ -63,11 +80,11 @@ const CsvDownloadButton = () => {
                     <div className="data-card-container">
                         {data.map((registration, index) => (
                             <div key={index} className="data-card">
-                                <h3>Name: {registration.name}</h3>
-                                <p>Email: {registration.email}</p>
-                                <p>College: {registration.college}</p>
-                                <p>Phone number: {registration.mobilenumber}</p>
-                                <p>Date Registered: {registration.date}</p>
+                                <h3><b>Name:</b> {registration.name}</h3>
+                                <p><b>Email:</b> {registration.email}</p>
+                                <p><b>College:</b> {registration.college}</p>
+                                <p><b>Phone number:</b> {registration.mobilenumber}</p>
+                                <p><b>Date Registered:</b> {registration.date}</p>
                             </div>
                         ))}
                     </div>
