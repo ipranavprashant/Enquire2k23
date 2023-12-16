@@ -17,7 +17,8 @@ import RaiseADispute from './components/jsx/RaiseADispute';
 import ScrollToTopArrow from './components/jsx/ScrollToTopArrow';
 import Registration from './components/jsx/Registration';
 import ActiveEvents from './components/jsx/ActiveEvents';
-import Data from './components/jsx/Data';
+import Admin from './components/jsx/Admin';
+import CsvDownloadButton from './components/jsx/CsvDownloadButton';
 
 const App = () => {
   return (
@@ -38,7 +39,8 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/raise-a-dispute" element={<RaiseADispute />} />
-        <Route path="/ipranavprashant/b210460cs" element={<Data />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin/registrations" element={<CsvDownloadButton />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <ScrollToTopArrow />
