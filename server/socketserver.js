@@ -12,12 +12,14 @@ app.use(cors());
 const server = http.createServer(app);
 
 const io = new Server(server, {
-  cors: {
-    // origin: "http://localhost:3000",
-    origin: "https://successenquire.netlify.app/chat",
-    methods: ["GET", "POST"],
-  },
 });
+
+app.use(
+    cors({
+      origin: true,
+      credentials: true,
+    })
+  );
 
 io.on("connection", (socket) => {
   console.log(`User Connected: ${socket.id}`);
