@@ -11,15 +11,21 @@ app.use(cors());
 
 const server = http.createServer(app);
 
-const io = new Server(server, {
-});
+const io = new Server(server, {});
 
 app.use(
-    cors({
-      origin: true,
-      credentials: true,
-    })
-  );
+  cors({
+    origin: true,
+    credentials: true,
+  })
+);
+
+server.use(
+  cors({
+    origin: true,
+    credentials: true,
+  })
+);
 
 io.on("connection", (socket) => {
   console.log(`User Connected: ${socket.id}`);
