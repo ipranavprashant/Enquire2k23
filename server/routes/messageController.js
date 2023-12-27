@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
 const express = require("express");
 const app = express();
 const http = require("http");
@@ -10,6 +14,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     // origin: "http://localhost:3000",
+    origin: "http://successenquire.netlify.app/chat",
     methods: ["GET", "POST"],
   },
 });
@@ -31,6 +36,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(5001, () => {
-  console.log("SERVER RUNNING");
+server.listen(process.env.SOCKET, () => {
+  console.log("Socket Server Running");
 });
