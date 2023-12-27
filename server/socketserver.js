@@ -3,29 +3,21 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 const express = require("express");
-const app = express();
 const http = require("http");
 const cors = require("cors");
 const { Server } = require("socket.io");
-app.use(cors());
 
+const app = express();
 const server = http.createServer(app);
 
-const io = new Server(server, {});
+app.use(cors());
 
-app.use(
-  cors({
+const io = new Server(server, {
+  cors: {
     origin: true,
     credentials: true,
-  })
-);
-
-Server.use(
-  cors({
-    origin: true,
-    credentials: true,
-  })
-);
+  },
+});
 
 io.on("connection", (socket) => {
   console.log(`User Connected: ${socket.id}`);
@@ -36,7 +28,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("send_message", (data) => {
-    socket.to(data.room).emit("receive_message", data);
+    io.to(data.room).emit("receive_message", data);
   });
 
   socket.on("disconnect", () => {
@@ -44,6 +36,8 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(process.env.SOCKET, () => {
-  console.log("Socket Server Running ");
+const PORT = process.env.SOCKET || 5001; // Use an appropriate port
+
+server.listen(PORT, () => {
+  console.log(`Socket Server Running on Port ${PORT}`);
 });
