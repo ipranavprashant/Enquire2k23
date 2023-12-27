@@ -16,7 +16,7 @@ const Registration = () => {
     name: "",
     email: "",
     college: "",
-    phoneCode: "1",
+    phoneCode: "91",
     mobilenumber: "",
     eventname: "",
   });

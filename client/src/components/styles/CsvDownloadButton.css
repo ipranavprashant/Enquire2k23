@@ -20,15 +20,21 @@
 }
 
 .data-card {
-  border: 1px solid #ccc;
+  background-color: #fdf7ff;
+  border: 1px solid #fdc8ff;
   border-radius: 8px;
   padding: 10px;
-  margin: 10px;
-  max-width: 300px;
+  margin: 15px;
+  min-width: 350px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .to-align {
   display: flex;
   justify-content: center;
+}
+
+.to-capitalize {
+  text-transform: capitalize;
 }

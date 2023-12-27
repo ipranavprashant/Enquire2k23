@@ -1,5 +1,5 @@
 //Executive's Images
-import Linda_Mary_Zacharia from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
+import Linda_Mary_Zacharia from "../../assets/members/2022-2023/Linda Mary Zacharia.jpg";
 import Harikrishnan_N from "../../assets/members/2022-2023/Harikrishnan N.jpg";
 import Aabid_Mohamed from "../../assets/members/2022-2023/Aabid Mohamed.jpg";
 import Lakshmipriya_S from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
@@ -8,7 +8,7 @@ import S_Sudhagar from "../../assets/members/2022-2023/S Sudhagar.jpeg";
 import Akash_EK from "../../assets/members/2022-2023/Akash E K.jpg";
 import Aswath_PR from "../../assets/members/2022-2023/ASWATH P R.jpg";
 import Joel_George_John from "../../assets/members/2022-2023/Joel George John.jpg";
-import K_Venkat_Bharath from "../../assets/members/2022-2023/Joel George John.jpg";
+import K_Venkat_Bharath from "../../assets/members/2022-2023/K Venkat Bharath.jpg";
 import Ananthu_Krishnan from "../../assets/members/2022-2023/Ananthu.jpg";
 import Aswin_Sanilkumar from "../../assets/members/2022-2023/Aswin Sanilkumar.jpg";
 import Shaik_Nagurbasha from "../../assets/members/2022-2023/Shaik Nagurbasha.jpg";
@@ -38,7 +38,7 @@ const executiveData = [
   },
   {
     id: 4,
-    name: "Lakshmipriya A",
+    name: "Lakshmi Priya S",
     position: "Assistant Secretary",
     image: Lakshmipriya_S,
   },

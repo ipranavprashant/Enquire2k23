@@ -11,6 +11,8 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
   grid-gap: 0;
+  border:2px solid rgb(228, 224, 224);
+  border-radius: 9px;
 }
 
 .image-wrapper {

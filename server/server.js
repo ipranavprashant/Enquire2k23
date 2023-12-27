@@ -14,6 +14,7 @@ const sponsorshipContoller = require("./routes/sponsorshipContoller");
 const registrationController = require("./routes/registrationController");
 const newsletterController = require("./routes/newsletterController");
 const adminController = require("./routes/adminController");
+const messageController = require("./routes/messageController");
 
 const app = express();
 
@@ -29,6 +30,10 @@ app.use(
 
 connectToMongo();
 
+// messageController.initSocketServer(server);
+
+
+
 app.post("/api/contact", contactController.createContact);
 app.post("/api/raise-a-dispute", disputeController.createDispute);
 app.post("/api/sponsorship", sponsorshipContoller.createSponsorship);
@@ -38,5 +43,6 @@ app.post("/api/newsletter", newsletterController.createNewsletter);
 app.post("/api/sign-up", adminController.signup);
 app.post("/api/login", adminController.login);
 app.get("/api/logout", adminController.logout);
+// app.get("/api/chat", messageController.initSocketServer);
 
 app.listen(process.env.PORT);

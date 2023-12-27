@@ -1,7 +1,7 @@
 //current people images
 
 //B21 Executives
-import Linda_Mary_Zacharia from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
+import Linda_Mary_Zacharia from "../../assets/members/2022-2023/Linda Mary Zacharia.jpg";
 import Harikrishnan_N from "../../assets/members/2022-2023/Harikrishnan N.jpg";
 import Aabid_Mohamed from "../../assets/members/2022-2023/Aabid Mohamed.jpg";
 import Lakshmipriya_S from "../../assets/members/2022-2023/Lakshmi Priya.S.jpeg";
@@ -10,7 +10,7 @@ import S_Sudhagar from "../../assets/members/2022-2023/S Sudhagar.jpeg";
 import Akash_EK from "../../assets/members/2022-2023/Akash E K.jpg";
 import Aswath_PR from "../../assets/members/2022-2023/ASWATH P R.jpg";
 import Joel_George_John from "../../assets/members/2022-2023/Joel George John.jpg";
-import K_Venkat_Bharath from "../../assets/members/2022-2023/Joel George John.jpg";
+import K_Venkat_Bharath from "../../assets/members/2022-2023/K Venkat Bharath.jpg";
 import Ananthu_Krishnan from "../../assets/members/2022-2023/Ananthu.jpg";
 import Aswin_Sanilkumar from "../../assets/members/2022-2023/Aswin Sanilkumar.jpg";
 import Shaik_Nagurbasha from "../../assets/members/2022-2023/Shaik Nagurbasha.jpg";
@@ -48,6 +48,7 @@ import Mutta_Divya_Sri from "../../assets/members/2023-2024/MUTTA DIVYA SRI.jpg"
 import Nakhireddi_Omkar from "../../assets/members/2023-2024/NAKHIREDDI OMKAR.jpeg";
 import Nirmal_Fageria from "../../assets/members/2023-2024/NIRMAL FAGERIA.jpg";
 import Pranaya_TP from "../../assets/members/2023-2024/PRANAYA T P.jpg";
+import Siddharth_Vinay from "../../assets/members/2023-2024/SIDDHARTH VINAY.jpg";
 import Smriti from "../../assets/members/2023-2024/SMRITI B220067EC.jpg";
 
 const membersData = [
@@ -71,7 +72,7 @@ const membersData = [
   },
   {
     id: 4,
-    name: "Lakshmipriya A",
+    name: "Lakshmi Priya S",
     position: "Assistant Secretary",
     image: Lakshmipriya_S,
   },
@@ -311,6 +312,12 @@ const membersData = [
   },
   {
     id: 44,
+    name: "Siddharth Vinay",
+    position: "Member",
+    image: Siddharth_Vinay,
+  },
+  {
+    id: 45,
     name: "Smriti",
     position: "Member",
     image: Smriti,

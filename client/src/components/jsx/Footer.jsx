@@ -58,11 +58,11 @@ const Footer = () => {
                 {/* <li><NavLink to="/privacypolicy" className="nav__link" onClick={scrollToTop}>privacy policy</NavLink></li> */}
                 <li>
                   <NavLink
-                    to="/members"
+                    to="/chat"
                     className="nav__link"
                     onClick={scrollToTop}
                   >
-                    our people
+                    Chat Room
                   </NavLink>
                 </li>
               </ul>

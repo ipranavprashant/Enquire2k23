@@ -45,7 +45,10 @@ const Image = styled.img`
   }
 `;
 
-const imageArray = Array.from({ length: 79 }, (_, index) => `${index + 1}.jpg`);
+const imageArray = Array.from(
+  { length: 140 },
+  (_, index) => `${index + 1}.jpg`
+);
 
 const InfiniteScrollImage = () => {
   const [images, setImages] = useState([]);
@@ -91,17 +94,17 @@ const InfiniteScrollImage = () => {
       </div>
       <Container ref={containerRef}>
         {images.map((image, index) => {
-          if (
-            index === 25 ||
-            index === 46 ||
-            index === 63 ||
-            index === 65 ||
-            index === 66 ||
-            index === 67 ||
-            index === 68
-          ) {
-            return null;
-          }
+          // if (
+          //   index === 25 ||
+          //   index === 46 ||
+          //   index === 63 ||
+          //   index === 65 ||
+          //   index === 66 ||
+          //   index === 67 ||
+          //   index === 68
+          // ) {
+          //   return null;
+          // }
 
           const isZoomed = index === zoomedIndex;
           return (

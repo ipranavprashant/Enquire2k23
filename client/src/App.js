@@ -18,8 +18,14 @@ import ScrollToTopArrow from "./components/jsx/ScrollToTopArrow";
 import Registration from "./components/jsx/Registration";
 import ActiveEvents from "./components/jsx/ActiveEvents";
 import CsvDownloadButton from "./components/jsx/CsvDownloadButton";
+import OfflinePage from "./components/jsx/OfflinePage";
 
+import useOnlineStatus from "./components/utils/customhooks/useOnlineStatus";
+import ChatLogin from "./components/jsx/ChatLogin";
 const App = () => {
+  const isOnline = useOnlineStatus();
+  if (!isOnline) return <OfflinePage />;
+
   return (
     <>
       <Navbar />
@@ -42,6 +48,7 @@ const App = () => {
         <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/raise-a-dispute" element={<RaiseADispute />} />
         <Route path="/admin" element={<CsvDownloadButton />} />
+        <Route path="/chat" element={<ChatLogin />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <ScrollToTopArrow />

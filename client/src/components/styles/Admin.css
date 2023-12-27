@@ -2,11 +2,11 @@
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  max-width: 400px;
+  max-width: 500px;
   padding: 50px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 5px;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   text-align: center;
 }
 
@@ -42,4 +42,9 @@
 
 .btn-spread {
   margin-top: 2rem;
+}
+
+
+@media (max-width: 575px) {
+
 }

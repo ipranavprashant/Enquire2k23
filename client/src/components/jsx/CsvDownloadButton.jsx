@@ -45,7 +45,7 @@ const CsvDownloadButton = () => {
       const link = document.createElement("a");
 
       link.setAttribute("href", csvContent);
-      link.setAttribute("download", "MyData.csv");
+      link.setAttribute("download", "EnquireRegistrations.csv");
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -99,8 +99,12 @@ const CsvDownloadButton = () => {
                 <p>
                   <b>College:</b> {registration.college}
                 </p>
+                <p className="to-capitalize">
+                  <b>Event:</b> {registration.eventname}
+                </p>
                 <p>
-                  <b>Phone number:</b> {registration.mobilenumber}
+                  <b>Phone number:</b>+{registration.phoneCode}-
+                  {registration.mobilenumber}
                 </p>
                 <p>
                   <b>Date Registered:</b> {registration.date}
