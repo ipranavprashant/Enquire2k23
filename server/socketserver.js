@@ -20,7 +20,7 @@ app.use(
   })
 );
 
-server.use(
+Server.use(
   cors({
     origin: true,
     credentials: true,
