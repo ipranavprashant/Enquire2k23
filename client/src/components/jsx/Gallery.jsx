@@ -94,18 +94,6 @@ const InfiniteScrollImage = () => {
       </div>
       <Container ref={containerRef}>
         {images.map((image, index) => {
-          // if (
-          //   index === 25 ||
-          //   index === 46 ||
-          //   index === 63 ||
-          //   index === 65 ||
-          //   index === 66 ||
-          //   index === 67 ||
-          //   index === 68
-          // ) {
-          //   return null;
-          // }
-
           const isZoomed = index === zoomedIndex;
           return (
             <Image

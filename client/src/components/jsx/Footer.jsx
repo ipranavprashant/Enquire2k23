@@ -4,7 +4,7 @@ import {
   FaXTwitter,
   FaInstagram,
   FaLinkedinIn,
-  FaEnvelope,
+  FaWhatsapp,
 } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import "../styles/Footer.css";
@@ -30,11 +30,20 @@ const Footer = () => {
               <ul>
                 <li>
                   <NavLink
-                    to="/about"
+                    to="/admin"
                     className="nav__link"
                     onClick={scrollToTop}
                   >
-                    about us
+                    Admin
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/chat"
+                    className="nav__link"
+                    onClick={scrollToTop}
+                  >
+                    Chat Room
                   </NavLink>
                 </li>
                 <li>
@@ -48,21 +57,11 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/admin"
+                    to="/quiz-calendar"
                     className="nav__link"
                     onClick={scrollToTop}
                   >
-                    Admin
-                  </NavLink>
-                </li>
-                {/* <li><NavLink to="/privacypolicy" className="nav__link" onClick={scrollToTop}>privacy policy</NavLink></li> */}
-                <li>
-                  <NavLink
-                    to="/chat"
-                    className="nav__link"
-                    onClick={scrollToTop}
-                  >
-                    Chat Room
+                    Quiz Calendar
                   </NavLink>
                 </li>
               </ul>
@@ -139,8 +138,12 @@ const Footer = () => {
                 >
                   <FaLinkedinIn />
                 </a>
-                <a href="mailto:enquireclub@nitc.ac.in">
-                  <FaEnvelope />
+                <a
+                  href="https://whatsapp.com/channel/0029VaAQ0CcBadmcmzjHD73Q"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp />
                 </a>
               </div>
             </div>

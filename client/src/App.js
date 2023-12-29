@@ -22,6 +22,7 @@ import OfflinePage from "./components/jsx/OfflinePage";
 
 import useOnlineStatus from "./components/utils/customhooks/useOnlineStatus";
 import ChatLogin from "./components/jsx/ChatLogin";
+import QuizCalendar from "./components/jsx/QuizCalendar";
 const App = () => {
   const isOnline = useOnlineStatus();
   if (!isOnline) return <OfflinePage />;
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/raise-a-dispute" element={<RaiseADispute />} />
         <Route path="/admin" element={<CsvDownloadButton />} />
         <Route path="/chat" element={<ChatLogin />} />
+        <Route path="/quiz-calendar" element={<QuizCalendar />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <ScrollToTopArrow />

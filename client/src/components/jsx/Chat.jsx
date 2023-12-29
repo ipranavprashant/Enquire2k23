@@ -36,6 +36,10 @@ const Chat = ({ socket, username, room }) => {
       <div className="beautify-heading">
         <h1>Room no {room}</h1>
         <p>Ask your friends to join with the same room number..</p>
+        <p>
+          Reminder: These chats are temporary, we do not store it in our
+          database.
+        </p>
       </div>
       <div class="container-chat">
         <div class="messages">
