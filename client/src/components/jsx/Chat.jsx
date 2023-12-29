@@ -21,7 +21,7 @@ const Chat = ({ socket, username, room }) => {
       };
 
       await socket.emit("send_message", messageData);
-      setMessageList((list) => [...list, messageData]);
+      // setMessageList((list) => [...list, messageData]);
       setCurrentMessage("");
     }
   };
@@ -35,6 +35,7 @@ const Chat = ({ socket, username, room }) => {
     <>
       <div className="beautify-heading">
         <h1>Room no {room}</h1>
+        <p>Ask your friends to join with the same room number..</p>
       </div>
       <div class="container-chat">
         <div class="messages">
@@ -56,14 +57,12 @@ const Chat = ({ socket, username, room }) => {
                   username === messageContent.author ? "sent" : "received"
                 }
               >
-                <div>
-                  <div className="message-meta">
-                    <p id="time">Sent at : {messageContent.time}</p>
-                    <p id="author">Sent by : {messageContent.author}</p>
-                  </div>
-                  <div className="message-content">
-                    <p>Message : {messageContent.message}</p>
-                  </div>
+                <div className="message-meta">
+                  <p id="time">Sent at : {messageContent.time}</p>
+                  <p id="author">Sent by : {messageContent.author}</p>
+                </div>
+                <div className="message-content">
+                  <p>Message : {messageContent.message}</p>
                 </div>
               </div>
             );
