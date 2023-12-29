@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat.jsx";
 
-const socket = io.connect("https://enquire-backend.onrender.com:5001");
+const socket = io.connect("https://enquire-chat-room-backend.onrender.com");
 // const socket = io.connect("http://localhost:5001");
 
 function ChatLogin() {
